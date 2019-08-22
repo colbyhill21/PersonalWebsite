@@ -1,0 +1,34 @@
+#header-div {
+    text-align:center;
+    background-image: url('../assets/header-back.jpg');
+    width: 100vw;
+    height: 50vh;
+    padding: 0;
+    margin: 0
+}
+
+#header-main-block {
+    color: white;
+    padding: 20vh 0;
+    margin: 0;
+    font-size: 5vmin;
+    font-family: 'Raleway';
+}
+
+.linkedin-icon {
+    font-size: 4em;
+    color: #fff !important;
+}
+
+.footer-row {
+    background-color: black;
+    width: 100vw;
+    height: 30vh;
+}
+
+.footer-col {
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+}

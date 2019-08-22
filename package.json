@@ -19,8 +19,10 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
+    "@mdi/font": "^4.1.95",
     "aws-amplify": "^1.1.36",
     "aws-amplify-angular": "^3.0.11",
+    "material-design-icons": "^3.0.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
