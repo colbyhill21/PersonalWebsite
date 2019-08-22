@@ -1,0 +1,16 @@
+#header-div {
+    text-align:center;
+    background-image: url('../../../assets/header-back.jpg');
+    width: 100vw;
+    height: 50vh;
+    padding: 0;
+    margin: 0
+}
+
+#header-main-block {
+    color: white;
+    padding: 20vh 0;
+    margin: 0;
+    font-size: 5vmin;
+    font-family: 'Raleway';
+}
