@@ -6,12 +6,12 @@
 .footer-row {
     background-color: black;
     width: 100vw;
-    height: 30vh;
+    height: 20vmin;
 }
 
 .footer-col {
     text-align: center;
-    width: 25%;
+    padding-top: 2vmin;
     height: 100%;
     display: inline-block;
 }
