@@ -4,13 +4,24 @@
 	  rel="stylesheet">
 </head>
 
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="background-color: #1a252f">
-	<div class="container col-sm-3" style="float: left; padding: 0 1%; margin: 0;">
-		<a class="navbar-brand">Colby Hill</a>
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="background-color: #1a252f; width: 100%" *ngIf="navVisible"> <!-- Container of the nav bar on desktop-->
+	<div class="container" style="float: left; padding: 0 1%; margin: 0;">
+		<a class="navbar-brand" style="font-family: Raleway">Colby Hill</a>
 		<ul class="nav navbar-nav nb" routerLinkActive="active">
 			<li class="nav-item"><a class="nav-link nb" routerLink="">Home</a></li>
 			<li class="nav-item"><a class="nav-link nb" routerLink="about">About Me</a></li>
 			<li class="nav-item"><a class="nav-link nb" routerLink="experience">Experience</a></li>
+		</ul>
+	</div>
+</nav>
+
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="background-color: #1a252f; width: 100%" *ngIf="!navVisible"> <!-- Container of the nav bar on mobile-->
+	<button (click)="showMobileNav=!showMobileNav" style="color: white; font-size: 3.0em"> &#8801;</button>
+	<div class="container" style="padding: 3% 1%; margin: 0;" *ngIf="showMobileNav">
+		<ul class="nav navbar-nav nb" style="float: left" routerLinkActive="active">
+			<li class="nav-item"><a (click)="showMobileNav=!showMobileNav" class="nav-link nb" routerLink="">Home</a></li>
+			<li class="nav-item"><a (click)="showMobileNav=!showMobileNav" class="nav-link nb" routerLink="about">About Me</a></li>
+			<li class="nav-item"><a (click)="showMobileNav=!showMobileNav" class="nav-link nb" routerLink="experience">Experience</a></li>
 		</ul>
 	</div>
 </nav>

@@ -2,15 +2,24 @@
     text-align:center;
     background-image: url('../../../assets/header-back.jpg');
     width: 100vw;
-    height: 50vh;
+    height: 50vmin;
     padding: 0;
     margin: 0
 }
 
 #header-main-block {
     color: white;
-    padding: 20vh 0;
+    padding: 20vmin 0;
     margin: 0;
     font-size: 5vmin;
     font-family: 'Raleway';
+}
+
+#quote-holder {
+    text-align: center;
+    font-family: lato;
+    background-color: #1a252f;
+    color: white;
+    font-size: 2.5vmin;
+    padding: 3% 0;
 }
