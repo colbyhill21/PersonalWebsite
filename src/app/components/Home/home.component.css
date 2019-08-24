@@ -30,7 +30,18 @@
     font-size: 2.0vmin;
     background: none;
     border-radius: 50px;
-	border: 3px solid rgb(0, 68, 255);
-	color: black;
+	border: 3px solid white;
+	color: white;
     overflow: hidden;
+}
+
+.image-cropper {
+    width: 30vmin;
+    height: 30vmin;
+    margin-bottom: 20px;
+    border: 3px solid white;
+    border-radius: 100%;
+    background: #eee no-repeat center;
+    background-size: cover;
+    background-image: url('./../../../assets/pro2.jpeg');
 }
