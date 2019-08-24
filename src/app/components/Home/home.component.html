@@ -1,10 +1,34 @@
+<div style="height: 50px">
+<!-- prevent nav bar from overlapping content on mobile -->
+</div>
 <div id="header-div">
 	<h1 id="header-main-block">
 		Hello, I'm <span style="color: rgb(0, 68, 255)">Colby Hill</span>.<br>
-		I'm a Software Developer.
+		I am a Software Developer.
 	</h1>
 </div>
 <div id="quote-holder">
 	"Every great developer you know got there by solving problems they were unqualified to solve until they actually did
 	it." - Patrick McKenzie
+</div>
+<div class="container" style="font-family: Raleway; padding: 2% 0">
+	<div class="row" style="text-align: center; font-size: 5vmin; padding: 1% 0">
+		What next?
+	</div>
+	<div class="row" *ngIf="onDesktop">
+		<div class="col-sm-6" style="text-align: right">
+			<button class="myButton" routerLink="about"> Learn about me </button> 
+		</div>
+		<div class="col-sm-6" style="text-align: left">
+			<button class="myButton" routerLink="experience"> See my work </button>
+		</div>
+	</div>
+	<div class="row" *ngIf="!onDesktop">
+		<div class="col-sm-6" style="text-align: center; padding: 2% 0">
+			<button class="myButton">Learn about me</button>
+		</div>
+		<div class="col-sm-6" style="text-align: center; padding: 2% 0">
+			<button class="myButton">See my work</button>
+		</div>
+	</div>
 </div>
