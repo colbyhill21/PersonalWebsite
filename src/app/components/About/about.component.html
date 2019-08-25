@@ -1,14 +1,13 @@
-<div style="height: 50px">
+<div style="height: 50px; background-color: #575757">
     <!-- prevent nav bar from overlapping content on mobile -->
 </div>
-<div class="row" style="padding: 3% 5% 0; margin: 0; font-family: Ubuntu; color: white; background-color: #f5f5f5; font-size: 10vmin"> 
+<div class="row" style="padding: 3% 5% 0; margin: 0; font-family: Ubuntu; color: white; background-color: #575757; font-size: 10vmin"> 
     About Me
 </div>
-<div style="padding: 1% 5%; margin: 0; font-family: Raleway; background-color: #f5f5f5;">
-    <h1 style="padding: 3% 0; margin: 0;">Hi, I'm Colby. </h1>
+<div style="padding: 1% 5%; margin: 0; font-family: Raleway; background-color: #575757">
     <div class="row">
         <div class="col-sm-2">
-            <img src="./../../../assets/personal_picture.jpg" style="width: 90%; padding: 0; margin: 0; border: 2px solid black;" >
+            <img src="./../../../assets/personal_picture.jpg" class="aboutImage" [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '3%' }" >
         </div>
         <div class="col-sm-10" style="overflow-wrap: break-word; font-size: 2.5vmin">
             My name is Colby Hill, I am a senior at the University of South Carolina pursuing a Bachelor's in Computer Science. I will graduate in May 2020 with Leadership Distinction in Research as well as an Information Assurance Specialization.
@@ -20,22 +19,22 @@
             You can also find me working as a peer tutor to younger Computer Science students, or volunteering with Active Minds &ndash; an organization that advocates for mental health.
         </div>
     </div>
-    <div class="row" style="padding: 2% 0%; margin: 0; font-family: Ubuntu; color: black; background-color: #f5f5f5; font-size: 7vmin"> 
+    <div class="row" style="padding: 2% 0%; margin: 0; font-family: Raleway; background-color: #575757; font-size: 7vmin"> 
         Interests
         <p style="overflow-wrap: break-word; font-size: 2.5vmin"> Outside of school, work, and volunteering, my interests include hiking, skiing, traveling, fishing, puzzle solving, and bowling.</p>
     </div>
-    <div class="row" style="padding: 0 0 2%; margin: 0; background-color: #f5f5f5;">
+    <div class="row" style="padding: 0; margin: 0; background-color: #575757">
         <div class="col-sm-3">
-            <img src="./../../../assets/skiing.jpg" style="width: 100%; padding: 0; margin: 0; border: 2px solid black;" >
+            <img src="./../../../assets/skiing.jpg" class="aboutImage">
         </div>
         <div class="col-sm-3">
-            <img src="./../../../assets/hiking.jpeg" style="width: 100%; padding: 0; margin: 0; border: 2px solid black;" >
+            <img src="./../../../assets/hiking.jpeg" class="aboutImage">
         </div>
         <div class="col-sm-3">
-            <img src="./../../../assets/fishing.jpg" style="width: 100%; padding: 0; margin: 0; border: 2px solid black;" >
+            <img src="./../../../assets/fishing.jpg" class="aboutImage">
         </div>
         <div class="col-sm-3">
-            <img src="./../../../assets/hotair.jpeg" style="width: 100%; padding: 0; margin: 0; border: 2px solid black;" >
+            <img src="./../../../assets/hotair.jpeg" class="aboutImage">
         </div>
     </div>
 </div> 
