@@ -31,3 +31,9 @@
   background-color: white;
   margin: 6px 0;
 }
+.nav-link:hover {
+    background-color: #263645;
+}
+.nav-link:active, .nav-link:after, .nav-link:active:after, .nav-link:not(:hover) {
+    background-color: #1a252f;
+}
