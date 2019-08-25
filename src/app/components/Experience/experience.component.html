@@ -1,16 +1,22 @@
 <div style="height: 50px">
-    <!-- prevent nav bar from overlapping content on mobile -->
+<!--
+    prevent nav bar from overlapping content on mobile -- this deals with the problem on all devices.
+    I don't particularly like this solution, but after some research it seems like this is what I have
+    to deal with for now.
+-->
 </div>
-<div class="row" style="padding: 2% 5% 0; margin: 0; font-family: Ubuntu; color: white; background-color: #575757; font-size: 10vmin"> 
+
+<div class="row" id="expHeader"> 
     Experience
 </div>
+
 <div style="padding: 1% 5%; margin: 0; font-family: Raleway; background-color: #575757; color: white">
     <div class="row" style="padding: 2% 0">
         <div class="col-sm-3">
-            <img src="./../../../assets/everett.jpeg" style="width: 100%; padding: 0; margin: 0; border: 3px solid white;">   
+            <img src="./../../../assets/everett.jpeg" class="expImage" [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '2%' }">   
         </div>
-        <div class="col-sm-9" style="overflow-wrap: break-word; font-size: 2.5vmin; padding: 0 1%; margin: -0.5% 0;">
-            <strong style="font-size: 3.5vmin; padding: 0; margin: 0;"> Boeing</strong> <br>
+        <div class="col-sm-9">
+            <strong [ngStyle]="{'font-size': onDesktop ? '4vmin' : '7vmin' }"> Boeing</strong> <br>
             This past summer I had the opportunity to work at Boeing as a Software Engineering Intern with the Identity & Directory Services team.
             I collaborated with team members, assisted the creation of coding standards for the Identity Directory Access Portal, 
             and gained extensive experience with Software Development, Cloud Computing, Web Design, and Information Security.
@@ -20,19 +26,17 @@
         </div>
     </div>
     <div class="row" style="padding: 2% 0">
-            <div class="col-sm-3">
-                <img src="./../../../assets/discover.jpeg" style="width: 100%; padding: 0; margin: 0; border: 3px solid white;">   
-            </div>
-            <div class="col-sm-9" style="overflow-wrap: break-word; font-size: 2.5vmin; padding: 0 1%; margin: -0.5% 0;">
-                <strong style="font-size: 3.5vmin; padding-top: 0"> University of South Carolina</strong> <br>
-                Throughout my Sophomore and Junior years at the University of South Carolina I worked as a Research Assistant in the Computational Biology Lab.
-                My research project sought to gather organic smoking data by using smartwatch technology to unobtrusivly detect and quickly characterize smoking behaviors.
-                During my time as a reserach assistant I gained practical knowledge in Mobile Development, Multithreading, Transfer Protocols, Machine Learning, Cloud Storage, and Signal Processing.
-                Additionally, I attained knowledge in Android and Wear OS development with a focus on accelerometer monitoring, communication and data transfer protocols, and local data storage.
-                During my Junior year I also worked as a teaching assistant for Algorithmic Design I/II courses where I was able to extend my passion for working with others as well as develop my leadership skills.
-                I conducted labs for 25-30 students bi-weekly and assisted in teaching students about programming fundamentals and Java. 
-                
-
-            </div>
+        <div class="col-sm-3">
+            <img src="./../../../assets/discover.jpeg" class="expImage" [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '2%', 'margin-top': onDesktop ? '0' : '2%' }">   
         </div>
+        <div class="col-sm-9">
+            <strong [ngStyle]="{'font-size': onDesktop ? '4vmin' : '7vmin' }"> University of South Carolina</strong> <br>
+            Throughout my Sophomore and Junior years at the University of South Carolina I worked as a Research Assistant in the Computational Biology Lab.
+            My research project sought to gather organic smoking data by using smartwatch technology to unobtrusivly detect and quickly characterize smoking behaviors.
+            During my time as a reserach assistant I gained practical knowledge in Mobile Development, Multithreading, Transfer Protocols, Machine Learning, Cloud Storage, and Signal Processing.
+            Additionally, I attained knowledge in Android and Wear OS development with a focus on accelerometer monitoring, communication and data transfer protocols, and local data storage.
+            During my Junior year I also worked as a teaching assistant for Algorithmic Design I/II courses where I was able to extend my passion for working with others as well as develop my leadership skills.
+            I conducted labs for 25-30 students bi-weekly and assisted in teaching students about programming fundamentals and Java. 
+        </div>
+    </div>
 </div>

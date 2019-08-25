@@ -2,10 +2,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://cdn.materialdesignicons.com/4.1.95/css/materialdesignicons.min.css"
 	  rel="stylesheet">
-	
+<!-- grab resources necessary for the page -->
 </head>
 
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="background-color: #1a252f;" *ngIf="navVisible"> <!-- Container of the nav bar on desktop-->
+<!-- Container of the nav bar on desktop-->
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="background-color: #1a252f;" *ngIf="navVisible">
 	<div class="container" style="float: left; padding: 0 1%; margin: 0;">
 		<a class="navbar-brand" style="font-family: Raleway">Colby Hill</a>
 		<ul class="nav navbar-nav nb">
@@ -16,7 +17,8 @@
 	</div>
 </nav>
 
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="background-color: #1a252f; width: 100vw;" *ngIf="!navVisible"> <!-- Container of the nav bar on mobile-->
+<!-- Container of the nav bar on mobile-->
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="background-color: #1a252f; width: 100vw;" *ngIf="!navVisible">
 	<button (click)="showMobileNav=!showMobileNav" style="color: white; font-size: 2.5em; background: none; border: none;">
 		<div class="menu-bar"> </div>
 		<div class="menu-bar"> </div>
@@ -33,11 +35,7 @@
 
 <router-outlet></router-outlet>
 
-<!-- <div style="height: 100vh; width: 100vw">
-</div> -->
-
 <div class="footer-row" style="padding: 0; margin: 0; text-align: center; overflow: visible">
-
 	<div class="footer-col">
 		<a class="linkedin-icon" href="https://www.linkedin.com/in/colby-h/"> <span class="mdi mdi-linkedin-box"></span> </a>
 	</div>
