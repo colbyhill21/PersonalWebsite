@@ -1,5 +1,5 @@
 .linkedin-icon {
-    font-size: 4em;
+    font-size: 7vmin;
     color: #fff !important;
 }
 
@@ -23,4 +23,11 @@
 
 .active-link-css {
    text-decoration: underline;
+}
+
+.menu-bar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
 }
