@@ -10,21 +10,21 @@
 <div class="row" style="width: 100vw; background-color: #575757; padding: 2% 6%; color: white; margin: 0">
 	<div class="col-sm-6" style="text-align: center" [ngStyle]="{'width': onDesktop ? '50%' : '100%' }">
 		<h1 style="text-align: center; font-family: Raleway; font-size: 6vmin; padding: 0; margin: 0;"> BIO</h1>
-		<p style="padding: 1% 9%; font-family: lato; font-size: 2vmin;">
+		<p style="font-family: lato;" [ngStyle]="{'font-size': onDesktop ? '2.25vmin' : '3.25vmin', 'padding': onDesktop ? '1% 9%' : '2% 0%'}">
 			I am currently a Software Development Intern at Krumware in Columbia, SC.
 			I am also a senior at the University of South Carolina working towards my Bachelor's in Computer Science with a
 			specialization in Information Assurance.
-			With previous experience in business to business sales, aerospace, education, leadership, IT asset
-			management, health, and research, I bring a unique perspective to the development community.
+			With previous experience in business to business sales, aerospace, IT asset management, health, and research, 
+			I bring a unique perspective to the development community.
 		</p>
 	</div>
-	<div class="col-sm-6" style="float: center; text-align: center">
+	<div class="col-sm-6" style="float: center; text-align: center" [ngStyle]="{'margin-bottom': onDesktop ? '0' : '2%'}">
 		<div class="image-cropper">
 
 		</div>
 	</div>
 </div>
-<div id="quote-holder">
+<div id="quote-holder" [ngStyle]="{'font-size': onDesktop ? '2.5vmin' : '3vmin'}">
 	"Every great developer you know got there by solving problems they were unqualified to solve until they actually did
 	it." - Patrick McKenzie
 </div>

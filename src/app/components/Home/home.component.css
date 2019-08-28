@@ -11,7 +11,7 @@
     color: white;
     padding: 15vmin 0;
     margin: 0;
-    font-size: 5vmin;
+    font-size: 6vmin;
     font-family: 'Raleway';
 }
 
@@ -20,8 +20,7 @@
     font-family: lato;
     background-color: #1a252f;
     color: white;
-    font-size: 2.5vmin;
-    padding: 3% 0;
+    padding: 3% 2%;
 }
 
 .myButton {
