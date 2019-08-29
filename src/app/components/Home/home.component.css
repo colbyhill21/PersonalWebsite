@@ -20,13 +20,11 @@
     font-family: lato;
     background-color: #1a252f;
     color: white;
-    padding: 3% 2%;
 }
 
 .myButton {
 	padding: 1% 5%;
 	display: inline-block;
-    font-size: 2.0vmin;
     background: none;
     border-radius: 50px;
 	border: 2px solid white;

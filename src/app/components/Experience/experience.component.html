@@ -6,11 +6,21 @@
 -->
 </div>
 
-<div class="row" id="expHeader"> 
-    Experience
+<div class="row" id="expHeader" [ngStyle]="{'font-size': onDesktop ? '9vmin' : '12vmin' }"> 
+    <strong>Experience</strong>
 </div>
 
 <div style="padding: 1% 5%; margin: 0; font-family: lato; background-color: #575757; color: white">
+    <div class="row" style="padding: 2% 0">
+        <div class="col-sm-3">
+            <img src="./../../../assets/everett.jpeg" class="expImage"
+                [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '2%' }">
+        </div>
+        <div class="col-sm-9">
+            <strong [ngStyle]="{'font-size': onDesktop ? '4vmin' : '7vmin' }"> Krumware</strong> <br>
+            I'm now working at Krumware.
+        </div>
+    </div>
     <div class="row" style="padding: 2% 0">
         <div class="col-sm-3">
             <img src="./../../../assets/everett.jpeg" class="expImage" [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '2%' }">   
@@ -22,8 +32,7 @@
             Access Portal, and gained extensive experience with Software Development, Cloud Computing, Web Design, and Information Security.
             During my internship, I was able to modernize an existing Identity management application by migrating to Pivotal Cloud, creating CI/CD pipelines, migrating the build to Gradle, and updating the UI.
             I was also able to develop a homepage for the IDAP team to serve as a centralized location for accessing all of the
-            team's services, applications, and announcements. Near the end of my internship, I was able to push both of these applications into production. My summer at Boeing was
-            empowering and an invaluable experience.
+            team's services, applications, and announcements. Near the end of my internship, I was able to push both of these applications into production.
         </div>
     </div>
     <div class="row" style="padding: 2% 0">
