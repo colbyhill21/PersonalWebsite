@@ -85,9 +85,8 @@
                 I created the timer to help me with studying and working. I decided to make my own because I wanted to make custom features, and I also thought it would be a fun project. 
             </p>
         </li>
-        <a href="https://github.com/colbyhill21" style="text-align: center; padding: 1% 35%;">
-            <button class="myButton"> See more of my projects on GitHub! <span class="mdi mdi-github-box"></span> 
-            </button>
+        <a href="https://github.com/colbyhill21" style="text-align: center;" [ngStyle]="{'padding': onDesktop ? '0 35%' : '0 25%' }">
+            <button class="myButton"> See more of my projects on GitHub! <span class="mdi mdi-github-box"> </span> </button>
         </a>
     </ul>
 </div>
