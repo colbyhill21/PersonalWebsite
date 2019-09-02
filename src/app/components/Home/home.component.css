@@ -37,6 +37,7 @@
     height: 30vmin;
     margin: 0 31%;
     border: 3px solid white;
+    text-align: center;
     border-radius: 100%;
     background-size: cover;
     background-image: url('./../../../assets/pro2.jpeg');

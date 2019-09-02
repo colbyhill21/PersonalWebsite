@@ -23,3 +23,22 @@
     margin: 0;
     font-family: Ubuntu;
 }
+.my-icon {
+    display: inline;
+    font-size: inherit;
+    color: #fff !important;
+}
+.myButton {
+	padding: 1% 5%;
+    display: inline-block;
+    text-align: center;
+    background: none;
+    border-radius: 50px;
+    margin-top: 2%; 
+	border: 2px solid white;
+	color: white;
+    overflow: hidden;
+}
+.mdi {
+    font-size: 2vmin;
+}
