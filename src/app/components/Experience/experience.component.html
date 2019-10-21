@@ -1,12 +1,12 @@
 <div style="height: 50px">
-<!--
+    <!--
     prevent nav bar from overlapping content on mobile -- this deals with the problem on all devices.
     I don't particularly like this solution, but after some research it seems like this is what I have
     to deal with for now.
 -->
 </div>
 
-<div class="row" id="expHeader" [ngStyle]="{'font-size': onDesktop ? '9vmin' : '12vmin' }"> 
+<div class="row" id="expHeader" [ngStyle]="{'font-size': onDesktop ? '9vmin' : '12vmin' }">
     Experience
 </div>
 
@@ -19,76 +19,104 @@
         <div class="col-sm-9">
             <strong [ngStyle]="{'font-size': onDesktop ? '4vmin' : '7vmin' }">Krumware</strong> <br>
             This Fall, I am working as a Software Development intern at Krumware, a startup in Columbia, SC that builds
-            distributed systems and web applications for enterprises. I collaborate with the development team and work directly
-            on their main projects. In this role, I will be developing complex and feature-rich progressive web applications, utilizing
-            continuous integration and development pipelines to maximize development efficiency, and gaining experience with many new
+            distributed systems and web applications for enterprises. I collaborate with the development team and work
+            directly
+            on their main projects. In this role, I will be developing complex and feature-rich progressive web
+            applications, utilizing
+            continuous integration and development pipelines to maximize development efficiency, and gaining experience
+            with many new
             tools and technologies. I am thrilled for a semester of developing, collaborating, learning, and growing!
         </div>
     </div>
     <div class="row" style="padding: 3% 0">
         <div class="col-sm-3">
-            <img src="./../../../assets/everett.jpeg" class="expImage" [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '2%', 'width': onDesktop ? '100%' : '80%'}">   
+            <img src="./../../../assets/everett.jpeg" class="expImage"
+                [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '2%', 'width': onDesktop ? '100%' : '80%'}">
         </div>
         <div class="col-sm-9">
             <strong [ngStyle]="{'font-size': onDesktop ? '4vmin' : '7vmin' }"> Boeing</strong> <br>
-            This past summer, I had the opportunity to work at Boeing in Bellevue, WA, as a Software Engineering Intern with the Identity & Directory
-            Services team. I collaborated with team members, assisted the creation of coding standards for the Identity Directory
-            Access Portal, and gained extensive experience with Software Development, Cloud Computing, Web Design, and Information Security.
-            During my internship, I was able to modernize an existing Identity management application by migrating to Pivotal Cloud, creating CI/CD pipelines, migrating the build to Gradle, and updating the UI.
-            I was also able to develop a homepage for the IDAP team to serve as a centralized location for accessing all of the
-            team's services, applications, and announcements. Near the end of my internship, I was able to push both of these applications into production.
+            This past summer, I had the opportunity to work at Boeing in Bellevue, WA, as a Software Engineering Intern
+            with the Identity & Directory
+            Services team. I collaborated with team members, assisted the creation of coding standards for the Identity
+            Directory
+            Access Portal, and gained extensive experience with Software Development, Cloud Computing, Web Design, and
+            Information Security.
+            During my internship, I was able to modernize an existing Identity management application by migrating to
+            Pivotal Cloud, creating CI/CD pipelines, migrating the build to Gradle, and updating the UI.
+            I was also able to develop a homepage for the IDAP team to serve as a centralized location for accessing all
+            of the
+            team's services, applications, and announcements. Near the end of my internship, I was able to push both of
+            these applications into production.
         </div>
     </div>
     <div class="row" style="padding: 2% 0">
         <div class="col-sm-3">
-            <img src="./../../../assets/discover.jpeg" class="expImage" [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '2%', 'margin-top': onDesktop ? '0' : '2%', 'width': onDesktop ? '100%' : '80%'}">   
+            <img src="./../../../assets/discover.jpeg" class="expImage"
+                [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '2%', 'margin-top': onDesktop ? '0' : '2%', 'width': onDesktop ? '100%' : '80%'}">
         </div>
         <div class="col-sm-9">
-            <strong [ngStyle]="{'font-size': onDesktop ? '4vmin' : '7vmin' }"> University of South Carolina</strong> <br>
-            Throughout my sophomore and junior years at the University of South Carolina, I worked as a Research Assistant in the
+            <strong [ngStyle]="{'font-size': onDesktop ? '4vmin' : '7vmin' }"> University of South Carolina</strong>
+            <br>
+            Throughout my sophomore and junior years at the University of South Carolina, I worked as a Research
+            Assistant in the
             Computational Biology Lab.
-            My research project sought to gather organic smoking behavior by using smartwatch technology to unobtrusively detect and
+            My research project sought to gather organic smoking behavior by using smartwatch technology to
+            unobtrusively detect and
             characterize smoking behaviors.
-            During my time as a research assistant, I gained practical knowledge in Mobile Development, Multithreading, Transfer
-            Protocols, Machine Learning, Cloud Storage, and Signal Processing. Additionally, I attained knowledge in Android and
-            Wear OS development with a focus on accelerometer monitoring, communication and data transfer protocols, and local data
-            storage. During my Junior year, I also worked as a teaching assistant for Algorithmic Design I/II courses where I was
-            able to extend my passion for working with others as well as develop my leadership skills. I conducted labs for 30
+            During my time as a research assistant, I gained practical knowledge in Mobile Development, Multithreading,
+            Transfer
+            Protocols, Machine Learning, Cloud Storage, and Signal Processing. Additionally, I attained knowledge in
+            Android and
+            Wear OS development with a focus on accelerometer monitoring, communication and data transfer protocols, and
+            local data
+            storage. During my Junior year, I also worked as a teaching assistant for Algorithmic Design I/II courses
+            where I was
+            able to extend my passion for working with others as well as develop my leadership skills. I conducted labs
+            for 30
             students bi-weekly and assisted in teaching students about programming fundamentals using Java.
         </div>
     </div>
 </div>
 
-<div class="row" style="margin: 0; font-family: Raleway; background-color: #575757; color: white" [ngStyle]="{'font-size': onDesktop ? '8vmin' : '11vmin', 'padding': onDesktop ? '0 5%' : '0 3%' }">
+<div class="row" style="margin: 0; font-family: Raleway; background-color: #575757; color: white"
+    [ngStyle]="{'font-size': onDesktop ? '8vmin' : '11vmin', 'padding': onDesktop ? '0 5%' : '0 3%' }">
     <strong>Projects</strong>
     <ul style="overflow-wrap: break-word; font-size: 2.5vmin; font-family: lato; list-style: none; padding: 0 0 1%">
         <li style="padding: 0.1% 0">
             <h1><b>Personal Portfolio</b></h1>
             <p> I designed and developed this website you are viewing using Angular, HTML, and CSS.
-                It was a fun and enjoyable project! I learned a great deal about web development and utilizing AWS to maximize development efficiency.
-                I leveraged numerous AWS services including S3, Route 53, Cloudfront, ACM, CodeBuild, CloudTrail, and CodePipeline to handle the website's storage, 
+                It was a fun and enjoyable project! I learned a great deal about web development and utilizing AWS to
+                maximize development efficiency.
+                I leveraged numerous AWS services including S3, Route 53, Cloudfront, ACM, CodeBuild, CloudTrail, and
+                CodePipeline to handle the website's storage,
                 hosting, content delivery, certificate management, and CI/CD.
             </p>
         </li>
         <li style="padding: 0.1% 0">
             <h1><b>National Parks Checklist</b></h1>
             <p> In Summer 2019, I took two cross country trips, during which I visited many National Park Service Units.
-                During my travels, I sought out an application to keep track of what units I've visited and visualize my progress. 
-                Although, to my surprise, I didn't find anything that matched what I wanted to see, so I decided that I would sharpen my iOS development skills and build my own solution.
+                During my travels, I sought out an application to keep track of what units I've visited and visualize my
+                progress.
+                Although, to my surprise, I didn't find anything that matched what I wanted to see, so I decided that I
+                would sharpen my iOS development skills and build my own solution.
                 I am currently reading a book about iOS development to better my readiness before diving in too far.
                 Since I am actively developing this application, keep an eye on my GitHub to see my progress!
             </p>
         </li>
         <li style="padding: 0.1% 0">
             <h1><b>Pomodoro Timer</b></h1>
-            <p> I created a small desktop timer widget using Python, Tkinter, and Pygame that uses the Pomodoro technique. 
-                Creating my own timer was important to me because I was interested in the process and I wanted features customized to my needs in order to
+            <p> I created a small desktop timer widget using Python, Tkinter, and Pygame that uses the Pomodoro
+                technique.
+                Creating my own timer was important to me because I was interested in the process and I wanted features
+                customized to my needs in order to
                 maximize my effectiveness at school and work.
-                
+
             </p>
         </li>
-        <a href="https://github.com/colbyhill21" style="text-align: center;" [ngStyle]="{'padding': onDesktop ? '0 35%' : '0 25%' }">
-            <button class="myButton"> See all of my projects on GitHub! <span class="mdi mdi-github-box"> </span> </button>
+        <a href="https://github.com/colbyhill21" style="text-align: center;"
+            [ngStyle]="{'padding': onDesktop ? '0 35%' : '0 25%' }">
+            <button class="myButton"> See all of my projects on GitHub! <span class="mdi mdi-github-box"> </span>
+            </button>
         </a>
     </ul>
 </div>
