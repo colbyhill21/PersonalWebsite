@@ -2,7 +2,7 @@ This is the repository for my personal website. I designed and developed it usin
 I leveraged numerous AWS services including S3, Route 53, Cloudfront, ACM, CodeBuild, CloudTrail, and CodePipeline to handle the website's storage, hosting, content delivery, certificate management, and CI/CD. I am using Route 53 to manage the hosted zone for the domain which is `https://www.colby-hill.com` and Cloudfront for global content delivery. Additionally I am using CodePipeline and CodeBuild to automatically build, and deploy upon every commit to this repository.
 
 Here is a screenshot of the homepage as of 10/19/19:
-<img src="https://i.imgur.com/aFEZjei.png" height="400">
+<img src="https://i.imgur.com/aFEZjei.png" height="400" alt="Screenshot of the UI of the homepage">
 
 ## Development server
 
