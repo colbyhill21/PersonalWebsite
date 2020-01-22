@@ -17,3 +17,6 @@ Run `ng serve -o` for a dev server.
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## How to get started
+just run `npm install` in the project root directory
