@@ -41,144 +41,85 @@
 	<h1 style="font-size: 6rem; text-align: center; width: 100%; color: #ffffff;">Experience</h1>
 </div>
 
-
+<!-- Desktop Experience Section  -->
 <div class="row experience-row" *ngIf="onDesktopNoCompress"> 
 	<div class="col-1-of-2">
-		<app-fancy-card companyName={{CompanyOneName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyOneName}} positionName={{C1Position}} imageName={{C1Image}}
+			positionDates={{C1Dates}} positionDetails={{C1Details}}>
 		</app-fancy-card>
 	</div>
 	<div class="col-1-of-2">
-		<app-fancy-card companyName={{CompanyTwoName}} positionName="Software Developer" imageName="../../../assets/krum.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I am working as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyTwoName}} positionName={{C2Position}} imageName={{C2Image}}
+			positionDates={{C2Dates}} positionDetails={{C2Details}}>
 		</app-fancy-card>
 	</div>
 </div>
 <div class="row experience-row" *ngIf="onDesktopNoCompress"> 
 	<div class="col-1-of-2">
-		<app-fancy-card companyName={{CompanyThreeName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyThreeName}} positionName={{C3Position}} imageName={{C3Image}}
+			positionDates={{C3Dates}} positionDetails={{C3Details}}>
 		</app-fancy-card>
 	</div>
 	<div class="col-1-of-2">
-		<app-fancy-card companyName={{CompanyFourName}} positionName="Software Developer" imageName="../../../assets/krum.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I am working as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyFourName}} positionName={{C4Position}} imageName={{C4Image}}
+			positionDates={{C4Dates}} positionDetails={{C4Details}}>
 		</app-fancy-card>
 	</div>
 </div>
 
-
-
-
-
-
-
+<!-- Desktop Experience Section with smaller width which needs compressed cards  -->
 <div class="row experience-row-compressed" *ngIf="OnDesktopCompressCards"> 
 	<div class="col-1-of-1">
-		<app-fancy-card companyName={{CompanyOneName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyOneName}} positionName={{C1Position}} imageName={{C1Image}}
+			positionDates={{C1Dates}} positionDetails={{C1Details}}>
 		</app-fancy-card>
 	</div>
 	<div class="col-1-of-1">
-		<app-fancy-card companyName={{CompanyTwoName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyTwoName}} positionName={{C2Position}} imageName={{C2Image}}
+			positionDates={{C2Dates}} positionDetails={{C2Details}}>
 		</app-fancy-card>
 	</div>
 </div>
-
 <div class="row experience-row-compressed" *ngIf="OnDesktopCompressCards"> 
 	<div class="col-1-of-1">
-		<app-fancy-card companyName={{CompanyThreeName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyThreeName}} positionName={{C3Position}} imageName={{C3Image}}
+			positionDates={{C3Dates}} positionDetails={{C3Details}}>
 		</app-fancy-card>
 	</div>
 	<div class="col-1-of-1">
-		<app-fancy-card companyName={{CompanyFourName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyFourName}} positionName={{C4Position}} imageName={{C4Image}}
+			positionDates={{C4Dates}} positionDetails={{C4Details}}>
 		</app-fancy-card>
 	</div>
 </div>
 
-
-
-
-
-
-
-
-
-
+<!-- Mobile Experience Section -->
 <div class="row experience-row-mobile" *ngIf="onMobileElse"> 
 	<div class="col-1-of-1">
-		<app-fancy-card companyName={{CompanyOneName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyOneName}} positionName={{C1Position}} imageName={{C1Image}}
+			positionDates={{C1Dates}} positionDetails={{C1Details}}>
 		</app-fancy-card>
 	</div>
 	<div class="col-1-of-1">
-		<app-fancy-card companyName={{CompanyTwoName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyTwoName}} positionName={{C2Position}} imageName={{C2Image}}
+			positionDates={{C2Dates}} positionDetails={{C2Details}}>
 		</app-fancy-card>
 	</div>
 </div>
-
 <div class="row experience-row-mobile" *ngIf="onMobileElse"> 
 	<div class="col-1-of-1">
-		<app-fancy-card companyName={{CompanyThreeName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyThreeName}} positionName={{C3Position}} imageName={{C3Image}}
+			positionDates={{C3Dates}} positionDetails={{C3Details}}>
 		</app-fancy-card>
 	</div>
 	<div class="col-1-of-1">
-		<app-fancy-card companyName={{CompanyFourName}} positionName="Software Engineering Intern" imageName="../../../assets/cap1.png"
-			positionDates="August 2019 - Current"
-			positionDetails="During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises.">
+		<app-fancy-card companyName={{CompanyFourName}} positionName={{C4Position}} imageName={{C4Image}}
+			positionDates={{C4Dates}} positionDetails={{C4Details}}>
 		</app-fancy-card>
 	</div>
 </div>
 
-<!-- <div style="padding: 10px 6%; background-color: #1a252f;">
-	<h1 style="font-size: 6rem; text-align: center; width: 100%; color: #ffffff;">Experience</h1>
-	<mat-grid-list cols={{numCols}} gutterSize={{gutterHeight}} rowHeight={{rowHeight}}>
-		<mat-grid-tile>
-			<div style="padding: 0% 0;">
-				<app-fancy-card companyName="Krumware" positionName="Software Developer" imageName="../../../assets/krum.png"
-					positionDates="August 2019 - Current"
-					positionDetails="This Fall, I am working as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises. I collaborate with the development team and work directly on their main projects. In this role, I will be developing complex and feature-rich progressive web applications, utilizing continuous integration and development pipelines to maximize development efficiency, and gaining experience with many new tools and technologies. I am thrilled for a semester of developing, collaborating, learning, and growing!">
-				</app-fancy-card>
-			</div>
-		</mat-grid-tile>
-		<mat-grid-tile>
-			<div style="padding: 0;">
-				<app-fancy-card companyName="Boeing" positionName="Software Engineering Intern" imageName="../../../assets/boeing2.png"
-					positionDates="May 2019 - August 2019"
-					positionDetails="This Fall, I am working as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises. I collaborate with the development team and work directly on their main projects. In this role, I will be developing complex and feature-rich progressive web applications, utilizing continuous integration and development pipelines to maximize development efficiency, and gaining experience with many new tools and technologies. I am thrilled for a semester of developing, collaborating, learning, and growing!">
-				</app-fancy-card>
-			</div>
-		</mat-grid-tile>
-		<mat-grid-tile>
-			<div style="padding: 0;">
-				<app-fancy-card companyName="University of South Carolina" positionName="Research Assistant" imageName="../../../assets/usc.png"
-					positionDates="August 2019 - Current"
-					positionDetails="This Fall, I am working as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications for enterprises. I collaborate with the development team and work directly on their main projects. In this role, I will be developing complex and feature-rich progressive web applications, utilizing continuous integration and development pipelines to maximize development efficiency, and gaining experience with many new tools and technologies. I am thrilled for a semester of developing, collaborating, learning, and growing!">
-				</app-fancy-card>
-			</div>
-		</mat-grid-tile>
-	</mat-grid-list>
-</div> -->
-
-
-
-
+<!-- Action Menu  -->
 <div style="text-align: center; width: 100%; font-size: 5vmin; color: white; background-color: #215994; font-family: Raleway;"
 	[ngStyle]="{'padding': onDesktop ? '1% 0 ' : '3% 0'}">
 	What next?
