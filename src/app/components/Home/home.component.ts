@@ -26,7 +26,7 @@ export class HomeComponent {
     adjustHeight() {
         if (this.innerWidth < 768) {
             this.onDesktop = false;
-            this.rowHeight = "1.5:1";
+            this.rowHeight = "1.35:1";
             this.numCols = 1;
             this.gutterHeight = "10px"
         }
