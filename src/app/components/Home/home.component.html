@@ -7,36 +7,15 @@
 <div style="height: 50px">
 	<!-- prevent nav bar from overlapping content on mobile -->
 </div>
-<div id="header-div">
-	<h1 id="header-main-block">
-		Hello, I'm <span style="color: rgb(0, 68, 255)"> <b> Colby Hill</b></span>.<br>
-		I'm a Software Developer.
-	</h1>
-</div>
-<div class="row" style="width: 100vw; background-color: #575757; color: white; margin: 0"
-	[ngStyle]="{'padding': onDesktop ? '2% 6%' : '3% 0'}">
-	<div class="col-sm-6" style="text-align: center" [ngStyle]="{'width': onDesktop ? '50%' : '100%' }">
-		<p style="font-family: lato; margin: 0"
-			[ngStyle]="{'font-size': onDesktop ? '2.5vmin' : '3.5vmin', 'padding': onDesktop ? '3% 7%' : '2% 0%'}">
-			Currently, I am a Software Development Intern at Krumware in Columbia, SC.
-			I am a senior at the University of South Carolina, where I am working towards my Bachelor's in Computer
-			Science with an
-			Information Assurance and Security Certificate and Leadership Distinction in Research.
-			With previous experience in research, IT asset management, and business to business sales,
-			I bring a unique perspective to the development community.
-		</p>
-	</div>
-	<div class="col-sm-6" style="float: center; text-align: center"
-		[ngStyle]="{'margin-bottom': onDesktop ? '0' : '2%'}">
-		<div class="image-cropper">
-		</div>
-	</div>
-</div>
+
+<app-title-section></app-title-section>
+
 <!-- <div id="quote-holder"
 	[ngStyle]="{'font-size': onDesktop ? '2.5vmin' : '3vmin', 'padding': onDesktop ? '3% 2%' : '5% 3%'}">
 	"Every great developer you know got there by solving problems they were unqualified to solve until they actually did
 	it." - Patrick McKenzie
 </div> -->
+
 <div class="row" style="background-color: #1a252f; padding: 10px; text-align: center; margin: 0 auto;">
 	<h1 style="font-size: 6rem; text-align: center; width: 100%; color: #ffffff;">Experience</h1>
 </div>

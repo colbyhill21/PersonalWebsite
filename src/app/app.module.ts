@@ -9,6 +9,7 @@ import { ExperienceComponent } from './components/Experience/experience.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './material.module';
 import { FancyCardComponent } from './components/fancy-card/fancy-card.component';
+import { TitleSectionComponent } from './components/title-section/title-section.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FancyCardComponent } from './components/fancy-card/fancy-card.component
     HomeComponent,
     AboutComponent,
     ExperienceComponent,
-    FancyCardComponent
+    FancyCardComponent,
+    TitleSectionComponent
   ],
   imports: [
     BrowserModule,

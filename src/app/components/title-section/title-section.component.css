@@ -1,0 +1,27 @@
+#header-div {
+    text-align:center;
+    background-image: url('../../../assets/header-back.jpg');
+    width: 100vw;
+    height: 40vmin;
+    padding: 0;
+    margin: 0;
+}
+
+#header-main-block {
+    color: white;
+    padding: 15vmin 0;
+    margin: 0;
+    font-size: 6vmin;
+    font-family: 'Raleway';
+}
+
+.image-cropper {
+    width: 30vmin;
+    height: 30vmin;
+    margin: 4% 31%;
+    border: 3px solid white;
+    text-align: center;
+    border-radius: 100%;
+    background-size: cover;
+    background-image: url('./../../../assets/personal_picture.jpg');
+}
