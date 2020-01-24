@@ -1,20 +1,26 @@
 #header-div {
     text-align:center;
-    background-image: url('../../../assets/header-back.jpg');
+    background-image: url('https://media.giphy.com/media/jaOXKCxtBPLieRLI0c/giphy.gif');
     width: 100vw;
-    height: 40vmin;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
 
 #header-main-block {
     color: white;
-    padding: 15vmin 0;
+    padding: 37vh 0 1vh 0;
     margin: 0;
-    font-size: 6vmin;
-    font-family: 'Raleway';
+    font-size: 10vmin;
+    font-family: 'Raleway', sans-serif;
 }
-
+#header-subtitle-block {
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 4.2vmin;
+    font-family: 'Raleway', sans-serif;
+}
 .image-cropper {
     width: 30vmin;
     height: 30vmin;

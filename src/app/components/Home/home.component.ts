@@ -15,7 +15,7 @@ export class HomeComponent {
     CompanyOneName = "Capital One";
     CompanyTwoName = "Krumware";
     CompanyThreeName = "Boeing";
-    CompanyFourName = "University of South Carolina";
+    CompanyFourName = "UofSC";
     C1Position = "Software Engineering Intern";
     C2Position = "Software Development Intern";
     C3Position = "Programmer / Analyst Intern";
@@ -30,8 +30,8 @@ export class HomeComponent {
     C4Dates =  "November 2017 - May 2019";
     C1Details = "During the summer after I graduate, I will be working as a Software Engineering Intern at Capital One. I will be working at their Headquarters in McLean, VA.";
     C2Details = "During my senior year, I worked as a Software Development intern at Krumware, a startup in Columbia, SC that builds distributed systems and web applications.";
-    C3Details = "na.";
-    C4Details = "na.";
+    C3Details = "During Summer of 2019, I completed an internship at Boeing in Seattle, WA where I worked with the Identity & Directory Services team.";
+    C4Details = "During my Sophomore and Junior years, I led a research project that sought to gather organic smoking behavior using smartwatch technology.";
 
 
     ngOnInit() {

@@ -1,12 +1,14 @@
 .example-card {
   font-family: "Lato", sans-serif;
-  background-color: #f1edf8;
+  background-color: white;
   margin: 0;
   padding: 1% 1.5%;
   width: 18vw;
   min-width: 270px;
 }
-
+.card-title {
+  font-weight: 550;
+}
 .example-header-image {
   background-size: cover;
 }
