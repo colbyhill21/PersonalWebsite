@@ -8,9 +8,18 @@ import { Component, HostListener } from '@angular/core';
 export class HomeComponent {
     onDesktop = true;
     innerWidth: any;
-    rowHeight= "2:1";
-    numCols = 2;
-    gutterHeight = "0px";
+    OnDesktopCompressCards = false;
+    onDesktopNoCompress = false;
+    onMobileElse = false;
+
+    CompanyOneName = "Capital One"
+    CompanyTwoName = "Krumware"
+    CompanyThreeName = "Boeing"
+    CompanyFourName = "University of South Carolina"
+    C1Position = "Software Engineering Intern"
+    C2Position = "Software Development Intern"
+    C3Position = "Programmer / Analyst Intern"
+    C4Position = "Research Assistant"
 
     ngOnInit() {
         this.innerWidth = window.innerWidth;
@@ -26,20 +35,21 @@ export class HomeComponent {
     adjustHeight() {
         if (this.innerWidth < 768) {
             this.onDesktop = false;
-            this.rowHeight = "1.35:1";
-            this.numCols = 1;
-            this.gutterHeight = "10px"
+            this.OnDesktopCompressCards = false;
+            this.onDesktopNoCompress = false;
+            this.onMobileElse = true;
         }
-        else if (this.innerWidth < 1100) {
-            this.onDesktop = false;
-            this.rowHeight = "2:1";
-            this.gutterHeight = "10px"
-            this.numCols = 1;
+        else if (this.innerWidth < 1300) {
+            this.onDesktop = true;
+            this.OnDesktopCompressCards = true;
+            this.onDesktopNoCompress = false;
+            this.onMobileElse = false;
         }
         else {
             this.onDesktop = true;
-            this.rowHeight = "1.75:1";
-            this.numCols = 2;
+            this.OnDesktopCompressCards = false;
+            this.onDesktopNoCompress = true;
+            this.onMobileElse = false;
         }
     }
 }

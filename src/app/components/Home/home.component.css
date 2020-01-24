@@ -42,3 +42,53 @@
     background-size: cover;
     background-image: url('./../../../assets/personal_picture.jpg');
 }
+
+.col-1-of-2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #777;
+    margin: 0 1.22vw;
+    padding: 0;
+    box-sizing: inherit;
+    float: left;
+    width: 18vw;
+    min-width: 270px;
+}
+.experience-row {
+    background-color: #1a252f;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1% 0;
+    padding-left: 30vw;
+}
+
+.col-1-of-1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #777;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: inherit;
+    position: relative;
+    width: 36vw;
+    min-width: 270px;
+    margin-bottom: 2%;
+}
+.experience-row-compressed {
+    background-color: #1a252f;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 12vw;
+}
+.experience-row-mobile {
+    background-color: #1a252f;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1% 0;
+    padding-left: auto;
+}
