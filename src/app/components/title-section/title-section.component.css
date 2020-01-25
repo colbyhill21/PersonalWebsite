@@ -3,7 +3,7 @@
     background-color: #000107;
     background-image: url('https://media.giphy.com/media/jaOXKCxtBPLieRLI0c/source.gif');
     width: 100vw;
-    height: 97vh;
+    height: calc(100vh - 50px);
     padding: 0;
     margin: 0;
     background-size: cover;
