@@ -1,8 +1,19 @@
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/36ebd5e87f.css">
+</head>
+
 <div id="header-div">
     <h1 id="header-main-block"> <b>Colby Hill</b></h1>
     <h2 id="header-subtitle-block"> Software Engineer</h2>
+    <div class="header-icons">
+        <a aria-label="Send email" href="mailto:colbyahill21@gmail.com"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/colby-h/"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a aria-label="My Github" target="_blank" href="https://github.com/colbyhill21"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+    </div>
+    <a class="down" href="#about" data-scroll=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
-<div class="row" style="width: 100vw; background-color: #575757; color: white; margin: 0"
+
+<div class="row" id="about" style="width: 100vw; background-color: #575757; color: white; margin: 0"
     [ngStyle]="{'padding': onDesktop ? '2% 6%' : '3% 0'}">
     <div class="col-sm-6" style="text-align: center" [ngStyle]="{'width': onDesktop ? '50%' : '100%' }">
         <p style="font-family: lato; margin: 0"
