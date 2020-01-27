@@ -17,12 +17,12 @@
 	it." - Patrick McKenzie
 </div> -->
 
-<div class="row" style="background-color: #1a252f; padding: 10px; text-align: center; margin: 0 auto;">
+<div class="row exp" style="padding: 10px; text-align: center; margin: 0 auto;">
 	<h1 style="font-size: 4rem; text-align: center; width: 100%; color: #ffffff;">Experience</h1>
 </div>
 
 <!-- Desktop Experience Section  -->
-<div class="row experience-row" *ngIf="onDesktopNoCompress"> 
+<div class="row experience-row exp" *ngIf="onDesktopNoCompress"> 
 	<div class="col-1-of-2">
 		<app-fancy-card companyName={{CompanyOneName}} positionName={{C1Position}} imageName={{C1Image}}
 			positionDates={{C1Dates}} positionDetails={{C1Details}}>
@@ -34,7 +34,7 @@
 		</app-fancy-card>
 	</div>
 </div>
-<div class="row experience-row" *ngIf="onDesktopNoCompress"> 
+<div class="row experience-row exp" *ngIf="onDesktopNoCompress" style="padding-bottom: 2%;"> 
 	<div class="col-1-of-2">
 		<app-fancy-card companyName={{CompanyThreeName}} positionName={{C3Position}} imageName={{C3Image}}
 			positionDates={{C3Dates}} positionDetails={{C3Details}}>
@@ -48,7 +48,7 @@
 </div>
 
 <!-- Desktop Experience Section with smaller width which needs compressed cards  -->
-<div class="row experience-row-compressed" *ngIf="OnDesktopCompressCards"> 
+<div class="row experience-row-compressed exp" *ngIf="OnDesktopCompressCards"> 
 	<div class="col-1-of-1">
 		<app-fancy-card companyName={{CompanyOneName}} positionName={{C1Position}} imageName={{C1Image}}
 			positionDates={{C1Dates}} positionDetails={{C1Details}}>
@@ -60,7 +60,7 @@
 		</app-fancy-card>
 	</div>
 </div>
-<div class="row experience-row-compressed" *ngIf="OnDesktopCompressCards"> 
+<div class="row experience-row-compressed exp" *ngIf="OnDesktopCompressCards" style="padding-bottom: 2%;"> 
 	<div class="col-1-of-1">
 		<app-fancy-card companyName={{CompanyThreeName}} positionName={{C3Position}} imageName={{C3Image}}
 			positionDates={{C3Dates}} positionDetails={{C3Details}}>
@@ -74,7 +74,7 @@
 </div>
 
 <!-- Mobile Experience Section -->
-<div class="row experience-row-mobile" *ngIf="onMobileElse"> 
+<div class="row experience-row-mobile exp" *ngIf="onMobileElse"> 
 	<div class="col-1-of-1">
 		<app-fancy-card companyName={{CompanyOneName}} positionName={{C1Position}} imageName={{C1Image}}
 			positionDates={{C1Dates}} positionDetails={{C1Details}}>
@@ -86,7 +86,7 @@
 		</app-fancy-card>
 	</div>
 </div>
-<div class="row experience-row-mobile" *ngIf="onMobileElse"> 
+<div class="row experience-row-mobile exp" *ngIf="onMobileElse" style="padding-bottom: 2%;"> 
 	<div class="col-1-of-1">
 		<app-fancy-card companyName={{CompanyThreeName}} positionName={{C3Position}} imageName={{C3Image}}
 			positionDates={{C3Dates}} positionDetails={{C3Details}}>
@@ -100,7 +100,9 @@
 </div>
 
 <!-- Action Menu  -->
-<div style="text-align: center; width: 100%; font-size: 5vmin; color: white; background-color: #215994; font-family: Raleway;"
+
+<!-- TODO: NEEDS SOME MAJOR WORK, COMMENTING OUT FOR NOW -->
+<!-- <div style="text-align: center; width: 100%; font-size: 5vmin; color: white; background-color: #215994; font-family: Raleway;"
 	[ngStyle]="{'padding': onDesktop ? '1% 0 ' : '3% 0'}">
 	What next?
 	<div style="padding: 0; margin: 0; display: block; font-family: lato"
@@ -110,4 +112,4 @@
 		<button class="myButton" routerLink="experience" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3vmin'}"> See
 			my work </button>
 	</div>
-</div>
+</div> -->
