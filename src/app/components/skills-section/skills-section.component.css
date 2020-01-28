@@ -1,0 +1,42 @@
+.skill-card {
+    background-color: white;
+    opacity: 90%;
+    margin: 1%;
+}
+
+.skill-category {
+    font-family: "Lato", sans-serif;
+    font-size: 3vmin;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.icon {
+    display: inline-block;
+    font: 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    transition: all .5s;
+    margin: 5px;
+    font-size: 4vw;
+    line-height: 4vw;
+}
+
+.skill-list {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    color: #777;
+    font-size: 2.5vmin;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skill-list-item {
+    padding: 2% 0;
+}

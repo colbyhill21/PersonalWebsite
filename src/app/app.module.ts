@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './material.module';
 import { FancyCardComponent } from './components/fancy-card/fancy-card.component';
 import { TitleSectionComponent } from './components/title-section/title-section.component';
+import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TitleSectionComponent } from './components/title-section/title-section.
     AboutComponent,
     ExperienceComponent,
     FancyCardComponent,
-    TitleSectionComponent
+    TitleSectionComponent,
+    SkillsSectionComponent
   ],
   imports: [
     BrowserModule,

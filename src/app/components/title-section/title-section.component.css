@@ -1,7 +1,7 @@
 #header-div {
     text-align:center;
     background-color: #000107;
-    background-image: url('https://media.giphy.com/media/jaOXKCxtBPLieRLI0c/source.gif');
+    background-image: url('../../../assets/giphy.GIF');
     width: 100vw;
     height: calc(100vh - 50px);
     padding: 0;
