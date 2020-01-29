@@ -10,6 +10,7 @@
 
 <!-- Title and Introduction Section  -->
 <app-title-section></app-title-section>
+<app-experience-section></app-experience-section>
 
 <!-- <div id="quote-holder"
 	[ngStyle]="{'font-size': onDesktop ? '2.5vmin' : '3vmin', 'padding': onDesktop ? '3% 2%' : '5% 3%'}">
@@ -17,12 +18,12 @@
 	it." - Patrick McKenzie
 </div> -->
 
-<div class="row exp" style="padding: 10px; text-align: center; margin: 0 auto;">
-	<h1 style="font-size: 4rem; text-align: center; width: 100%; color: #ffffff; text-transform: uppercase;">Experience</h1>
-</div>
+<!-- <div class="row exp" style="padding: 2% 10px; text-align: center; margin: 0 auto;">
+	<h1 style="font-size: 3vw; text-align: center; width: 100%; color: #ffffff; text-transform: uppercase;">Experience</h1>
+</div> -->
 
 <!-- Desktop Experience Section  -->
-<div class="row experience-row exp" *ngIf="onDesktopNoCompress"> 
+<!-- <div class="row experience-row exp" *ngIf="onDesktopNoCompress"> 
 	<div class="col-1-of-2">
 		<app-fancy-card companyName={{CompanyOneName}} positionName={{C1Position}} imageName={{C1Image}}
 			positionDates={{C1Dates}} positionDetails={{C1Details}}>
@@ -47,7 +48,7 @@
 	</div>
 </div>
 
-<!-- Desktop Experience Section with smaller width which needs compressed cards  -->
+Desktop Experience Section with smaller width which needs compressed cards 
 <div class="row experience-row-compressed exp" *ngIf="OnDesktopCompressCards"> 
 	<div class="col-1-of-1">
 		<app-fancy-card companyName={{CompanyOneName}} positionName={{C1Position}} imageName={{C1Image}}
@@ -71,7 +72,7 @@
 			positionDates={{C4Dates}} positionDetails={{C4Details}}>
 		</app-fancy-card>
 	</div>
-</div>
+</div> -->
 
 <!-- Mobile Experience Section -->
 <div class="row experience-row-mobile exp" *ngIf="onMobileElse"> 
@@ -97,7 +98,7 @@
 			positionDates={{C4Dates}} positionDetails={{C4Details}}>
 		</app-fancy-card>
 	</div>
-</div>
+</div> -->
 
 <app-skills-section></app-skills-section>
 <!-- Action Menu  -->

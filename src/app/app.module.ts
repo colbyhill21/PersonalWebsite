@@ -9,8 +9,9 @@ import { ExperienceComponent } from './components/Experience/experience.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './material.module';
 import { FancyCardComponent } from './components/fancy-card/fancy-card.component';
-import { TitleSectionComponent } from './components/title-section/title-section.component';
-import { SkillsSectionComponent } from './components/skills-section/skills-section.component';
+import { TitleSectionComponent } from './components/Home/title-section/title-section.component';
+import { SkillsSectionComponent } from './components/Home/skills-section/skills-section.component';
+import { ExperienceSectionComponent } from './components/Home/experience-section/experience-section.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SkillsSectionComponent } from './components/skills-section/skills-secti
     ExperienceComponent,
     FancyCardComponent,
     TitleSectionComponent,
-    SkillsSectionComponent
+    SkillsSectionComponent,
+    ExperienceSectionComponent
   ],
   imports: [
     BrowserModule,

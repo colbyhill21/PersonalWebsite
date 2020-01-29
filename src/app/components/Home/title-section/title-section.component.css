@@ -1,7 +1,7 @@
 #header-div {
     text-align:center;
     background-color: #000107;
-    background-image: url('../../../assets/giphy.GIF');
+    background-image: url('../../../../assets/giphy.GIF');
     width: 100vw;
     height: calc(100vh - 50px);
     padding: 0;
@@ -34,7 +34,7 @@
     text-align: center;
     border-radius: 100%;
     background-size: cover;
-    background-image: url('./../../../assets/personal_picture.jpg');
+    background-image: url('./../../../../assets/personal_picture.jpg');
 }
 
 .icon {
