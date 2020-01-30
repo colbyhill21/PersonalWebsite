@@ -1,0 +1,49 @@
+.exp-card {
+    background-color: white;
+    padding: 1% 1%;
+    margin: 1%;
+    opacity: 90%;
+    transition-property: all;
+    transition-duration: 0.35s;
+    transition-delay: 0s;
+}
+.exp-card:hover {
+    transform: scale(1.04) translateY(-3%);
+}
+.comp-icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    vertical-align: middle;
+    /* border: 3px solid white;
+    text-align: center; */
+    border-radius: 100%;
+    /* background-size: cover; */
+}
+
+.comp-title {
+    font-family: "Lato",sans-serif;
+    font-size: 3vmin;
+    font-weight: 600;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.comp-subtitle {
+    font-family: "Lato",sans-serif;
+    font-size: 2vmin;
+    font-weight: 500;
+    padding: 0;
+    vertical-align: middle;
+    text-align: left;
+}
+.bullet-list {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 1.7vmin;
+    margin: 0;
+    padding: 1% 4.5%;
+}
+.skill-list-item {
+    padding: 1% 0;
+}
