@@ -11,6 +11,7 @@ import { MaterialModule } from './material.module';
 import { TitleSectionComponent } from './components/Home/title-section/title-section.component';
 import { SkillsSectionComponent } from './components/Home/skills-section/skills-section.component';
 import { ExperienceSectionComponent } from './components/Home/experience-section/experience-section.component';
+import { ProjectSectionComponent } from './components/Home/project-section/project-section.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ExperienceSectionComponent } from './components/Home/experience-section
     ExperienceComponent,
     TitleSectionComponent,
     SkillsSectionComponent,
-    ExperienceSectionComponent
+    ExperienceSectionComponent,
+    ProjectSectionComponent
   ],
   imports: [
     BrowserModule,
