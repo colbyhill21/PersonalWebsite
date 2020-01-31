@@ -1,7 +1,5 @@
 .exp-card {
     background-color: white;
-    padding: 1% 1%;
-    margin: 1%;
     opacity: 90%;
     transition-property: all;
     transition-duration: 0.35s;
@@ -11,13 +9,8 @@
     transform: scale(1.04) translateY(-3%);
 }
 .comp-icon {
-    width: 2.5vw;
-    height: 2.5vw;
     vertical-align: middle;
-    /* border: 3px solid white;
-    text-align: center; */
     border-radius: 100%;
-    /* background-size: cover; */
 }
 
 .comp-title {
