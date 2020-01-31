@@ -15,11 +15,10 @@
     <a class="down" href="#about" data-scroll=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
-<div class="row" id="about" style="width: 100vw; background-color: #060a3b; color: white; margin: 0"
+<div class="row" id="about" style="width: 100vw; background-color: #060a3b; color: white; margin: 0; display: flex; flex-flow: row wrap;"
     [ngStyle]="{'padding': onDesktop ? '2% 6%' : '3% 0'}">
-    <div class="col-sm-6" style="text-align: center" [ngStyle]="{'width': onDesktop ? '50%' : '100%' }">
-        <p style="font-family: lato; vertical-align: middle;"
-            [ngStyle]="{'font-size': onDesktop ? '2.5vmin' : '3.5vmin', 'padding': onDesktop ? '3% 1%' : '2% 0%'}">
+    <div class="col-sm-6" style="text-align: center; vertical-align: middle;" [ngStyle]="{'width': onDesktop ? '50%' : '100%' }">
+        <p class="about-text" [ngStyle]="{'font-size': onDesktop ? '1.6vw' : '3.5vw', 'padding': onDesktop ? '3% 1%' : '2% 1%'}">
             Currently, I am a Software Development Intern at Krumware in Columbia, SC.
             I am a senior at the University of South Carolina, where I am working towards my Bachelor's in Computer
             Science with an
@@ -28,9 +27,9 @@
             I bring a unique perspective to the development community.
         </p>
     </div>
-    <div class="col-sm-6" style="float: center; text-align: center"
-        [ngStyle]="{'margin-bottom': onDesktop ? '0' : '2%'}">
-        <div class="image-cropper">
-        </div>
+    <div class="col-sm-6" style="float: center; text-align: center;" 
+    [ngStyle]="{'margin-bottom': onDesktop ? '0' : '2%', 'width': onDesktop ? '50%' : '100%', 'padding-left': onDesktop ? '0' : '13.5%'}">
+
+        <div class="image-cropper" > </div>
     </div>
 </div>

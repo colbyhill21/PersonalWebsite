@@ -6,7 +6,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
     styleUrls: ['./title-section.component.css']
 })
 export class TitleSectionComponent implements OnInit {
-    onDesktop = true;
+    onDesktop: boolean;
     innerWidth: any;
 
     constructor() { }
