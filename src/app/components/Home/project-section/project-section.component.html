@@ -1,13 +1,14 @@
 <div style="background-color: #060a3b; padding-bottom: 3%;">
 
     <div class="row" style="padding: 2% 10px; text-align: center; margin: 0% auto;">
-        <h1 style="font-size: 3vw; text-align: center; width: 100%; color: #ffffff; text-transform: uppercase;">Projects
+        <h1 style="text-align: center; width: 100%; color: #ffffff; text-transform: uppercase;"
+        [ngStyle]="{'font-size': onDesktop ? '3vw' : '8vw' }">Projects
         </h1>
     </div>
 
     <div class="row">
         <div class="col-sm-3" style="width: 22%;"> </div>  <!-- spacer -->
-        <div class="col-sm-2 card">
+        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '1%' : '5%'}">
             <div class="flip">
                 <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
                    <h1 class="text-shadow">Outdoorist</h1>
@@ -19,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 card">
+        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '1%' : '5%'}">
             <div class="flip">
                 <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
                    <h1 class="text-shadow">Outdoorist</h1>
@@ -31,10 +32,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 card">
+        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '1%' : '5%'}">
             <div class="flip">
                 <div class="front" style="background-image: url(https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb)">
-                   <h1 class="text-shadow">Outdoorist</h1>
+                   <h1 class="text-shadow" >Outdoorist</h1>
                 </div>
                 <div class="back" style="text-align: center; padding: 0%;">
                     <h1 class="proj-title">Outdoorist</h1>
