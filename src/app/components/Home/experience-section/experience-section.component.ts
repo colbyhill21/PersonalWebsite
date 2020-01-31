@@ -26,5 +26,4 @@ export class ExperienceSectionComponent {
             this.onDesktop = true;
         }
     }
-
 }

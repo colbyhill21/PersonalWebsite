@@ -28,8 +28,11 @@
         </p>
     </div>
     <div class="col-sm-6" style="float: center; text-align: center;" 
-    [ngStyle]="{'margin-bottom': onDesktop ? '0' : '2%', 'width': onDesktop ? '50%' : '100%', 'padding-left': onDesktop ? '0' : '13.5%'}">
+    [ngStyle]="{'margin-bottom': onDesktop ? '0' : '2%', 'width': onDesktop ? '50%' : '100%', 'padding-left': onDesktop ? '0' : '1%'}">
 
-        <div class="image-cropper" > </div>
+        <div class="image-cropper" [ngStyle]="{'width': onDesktop ? '20vw' : '40vw', 'height': onDesktop ? '20vw' : '40vw'}"> </div>
     </div>
 </div>
+<!-- <div style="text-align: center; color: wheat;">
+    <h1 style="text-align: center;">|</h1>
+</div> -->
