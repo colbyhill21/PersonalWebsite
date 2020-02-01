@@ -1,12 +1,13 @@
 #header-div {
     text-align:center;
     background-color: #000107;
-    background-image: url('../../../../assets/giphy.GIF');
     width: 100vw;
     height: calc(100vh - 50px);
     padding: 0;
     margin: 0;
     background-size: cover;
+    background-image: url('../../../../assets/background.gif');
+    background-position: bottom;
 }
 
 #header-main-block {
