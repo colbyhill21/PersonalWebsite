@@ -6,7 +6,7 @@
         </h1>
     </div>
 
-    <div class="row">
+    <div class="row" *ngIf="onDesktop" style="width: 100vw;">
         <div class="col-sm-3" style="width: 23.5%;"> </div>  <!-- spacer -->
         <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '0.5%' : '5%'}">
             <div class="flip">
@@ -45,4 +45,49 @@
         </div>
         <div class="col-sm-3"> </div>
     </div>
+
+    
+    <!-- <div class="row" *ngIf="!onDesktop">
+        <div class="col-sm-3" style="width: 23.5%;"> </div>
+        <div class="col-sm-2 card" style="padding: 2%; margin: 5%">
+            <div class="flip">
+                <div class="front" style="background-image: url(../../../../assets/hoh.jpg)">
+                    <h1 class="text-shadow" [ngStyle]="{'font-size': onDesktop ? '2vw' : '5vw' }">Outdoorist</h1>
+                </div>
+                <div class="back" style="text-align: center; padding: 0%;">
+                    <h1 class="proj-title">Outdoorist</h1>
+                    <h5 class="proj-desc">iOS app to track outdoor adventures, learn about new destinations, and plan trips
+                    </h5>
+                    <a href="https://apps.apple.com/app/id1489423707" class="card-button">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '0.5%' : '5%'}">
+            <div class="flip">
+                <div class="front"
+                    style="background-image: url(../../../../assets/tourAR.jpg); background-position: top !important;">
+                    <h1 class="text-shadow" [ngStyle]="{'font-size': onDesktop ? '2vw' : '5vw' }">USC Tour AR</h1>
+                </div>
+                <div class="back" style="text-align: center; padding: 0%;">
+                    <h1 class="proj-title">USC Tour AR</h1>
+                    <h5 class="proj-desc">iOS app that enables Augmented Reality historical tours of the University of South
+                        Carolina</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '0.5%' : '5%'}">
+            <div class="flip">
+                <div class="front"
+                    style="background-image: url(../../../../assets/blockDestroyer.jpg); background-position: top !important;">
+                    <h1 class="text-shadow" [ngStyle]="{'font-size': onDesktop ? '2vw' : '5vw' }">Block Destroyer</h1>
+                </div>
+                <div class="back" style="text-align: center; padding: 0%;">
+                    <h1 class="proj-title">Block Destroyer</h1>
+                    <h5 class="proj-desc">Simple arcade game I created while learning the Java Objectdraw libary</h5>
+                    <a href="https://github.com/colbyhill21/Block-Destroyer-Game" class="card-button">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"> </div>
+    </div> -->
 </div>
