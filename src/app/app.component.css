@@ -2,9 +2,11 @@
     font-size: 7vmin;
     color: #fff !important;
 }
+.bkg {
+    background-color: #1a252f;
+}
 
 .footer-row {
-    background-color: #1a252f;
     width: 100vw;
     height: 10vmin;
 }
@@ -33,7 +35,7 @@
   margin: 6px 0;
 }
 .nav-link:hover {
-    background-color: #263645;
+    background-color: gray;
 }
 .nav-link:active, .nav-link:after, .nav-link:active:after, .nav-link:not(:hover) {
     background-color: #1a252f;
