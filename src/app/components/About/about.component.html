@@ -16,7 +16,8 @@
         </h1>
     </div>
     <div class="row" style="background: rgba(26, 37, 47, 0.85); padding: 2%; margin-bottom: 2%; text-align: justify; border-radius: 30px;">
-        <div class="col-sm-12" style="overflow-wrap: break-word; font-size: 3vmin; font-family: Lato, sans-serif;">
+        <div class="col-sm-12" style="overflow-wrap: break-word; font-family: Lato, sans-serif;"
+            [ngStyle]="{'font-size': onDesktop ? '3vmin' : '4vmin', 'text-align': onDesktop ? 'justify' : 'center'}">
             My name is Colby Hill. As a senior at the University of South Carolina, I am pursuing a Bachelor's in
             Computer Science.
             In May 2020, I will graduate with Leadership Distinction in Research as well as an Information Assurance and
@@ -35,24 +36,24 @@
         </div>
     </div>
 </div>
-<div style="padding: 4% 12%; margin: 0; font-family: lato; background-color: black; background-image: url(../../../../assets/interest4.jpg); background-size: cover;">
+<div style="padding: 4% 12%; margin: 0; font-family: lato; background-color: #1d2903; background-image: url(../../../../assets/interest4.jpg); background-size: cover;">
     <div class="row header" style="padding: 2%; text-align: center; margin: 2%;">
         <h1 class="header" [ngStyle]="{'font-size': onDesktop ? '4vw' : '8vw' }">Interests
         </h1>
     </div>
     <div class="row" style="padding: 2%; margin: 0; font-family: Lato, sans-serif; font-size: 7vmin; background: rgba(26, 37, 47, 0.85); border-radius: 30px;">
         
-        <p style="overflow-wrap: break-word; text-align: justify; font-size: 3vmin; font-family: Lato, sans-serif; padding: 2%;">
+        <p style="overflow-wrap: break-word; font-family: Lato, sans-serif; padding: 2%;"
+        [ngStyle]="{'font-size': onDesktop ? '3vmin' : '4vmin', 'text-align': onDesktop ? 'justify' : 'center'}">
             Whenever I'm not working, volunteering, or creating, you will likely find me outdoors.
-            I have an unequivocal passion for hiking and traveling with my fiancé Hayden. 
-            Ever since learning to ski, I've done everything I can to get back to the slopes. 
-            When I'm home, I'm attempting to follow along with Gordon Ramsay cooking videos, 
+            I have an unequivocal passion for hiking and traveling with my fiancé Hayden.
+            Ever since learning to ski, I've done everything I can to get back to the slopes.
+            When I'm home, I'm attempting to follow along with Gordon Ramsay cooking videos,
             playing chess, hanging out with friends, or watching Netflix.
             
             
-<!--  fishing, bowling, chess, crosswords -->
         </p>
-        <div class="col-sm-12">
+        <div class="col-sm-12" *ngIf="onDesktop">
             <div class="img-col">
                 <img src="./../../../assets/skiing.jpg" alt="Skiing at Snowshoe, WV" class="aboutImage">
             </div>
@@ -64,6 +65,23 @@
             </div>
             <div class="img-col">
                 <img src="./../../../assets/hotair.jpeg" alt ="About to takeoff in a Hot Air Balloon in Albuquerque, NM" class="aboutImage">
+            </div>
+        </div>
+
+        <!-- Optimized for mobile -->
+        <div class="col-sm-12" *ngIf="!onDesktop">
+            <div class="mobile-img-col">
+                <img src="./../../../assets/skiing.jpg" alt="Skiing at Snowshoe, WV" class="aboutImage">
+            </div>
+            <div class="mobile-img-col">
+                <img src="./../../../assets/hiking.jpeg" alt="Hiking at Mount Baker, WA" class="aboutImage">
+            </div>
+            <div class="mobile-img-col">
+                <img src="./../../../assets/fishing.jpg" alt="Fishing on a boat in Sandy Run, SC" class="aboutImage">
+            </div>
+            <div class="mobile-img-col">
+                <img src="./../../../assets/hotair.jpeg" alt="About to takeoff in a Hot Air Balloon in Albuquerque, NM"
+                    class="aboutImage">
             </div>
         </div>
     </div>

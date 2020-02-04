@@ -26,7 +26,6 @@ div, h1, .row {
     height: 23%;
     margin: 1%;
     display: inline-block;
-    /* filter: brightness(1); */
 }
 .img-col:hover {
     transform: scale(1.05);
@@ -41,4 +40,10 @@ div, h1, .row {
     text-transform: uppercase;
     font-family: Lato, sans-serif;
     font-weight: 500;
+}
+.mobile-img-col {
+    width: 46%;
+    height: 23%;
+    margin: 2% 2%;
+    display: inline-block;
 }
