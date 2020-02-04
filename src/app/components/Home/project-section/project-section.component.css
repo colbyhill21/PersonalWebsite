@@ -113,5 +113,16 @@ h1 {
   margin: 0.1;
 }
 .card {
-  min-width: 190px;
+  min-width: 100px;
+}
+
+.proj-col {
+    width: 29%;
+    margin: 2.15%;
+    padding: 0;
+    display: inline-block;
+}
+
+.mobile {
+  padding: 3% 0;
 }

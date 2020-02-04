@@ -6,12 +6,11 @@
         </h1>
     </div>
 
-    <div class="row" style="width: 100vw; margin: 0">
-        <div class="col-sm-3" style="width: 23.5%;"> </div>  <!-- spacer -->
-        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '0.5%' : '5%'}">
+    <div class="row" style="width: 100vw; margin: 0; padding: 0 10%; display: flex; flex-flow: row wrap;" *ngIf="onDesktop">
+        <div class="proj-col card">
             <div class="flip">
                 <div class="front" style="background-image: url(../../../../assets/hoh.jpg)">
-                   <h1 class="text-shadow" [ngStyle]="{'font-size': onDesktop ? '2vw' : '5vw' }">Outdoorist</h1>
+                   <h1 class="text-shadow" style="font-size: 2vw;">Outdoorist</h1>
                 </div>
                 <div class="back" style="text-align: center; padding: 0%;">
                     <h1 class="proj-title">Outdoorist</h1>
@@ -20,10 +19,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '0.5%' : '5%'}">
+        <div class="proj-col card">
             <div class="flip">
                 <div class="front" style="background-image: url(../../../../assets/tourAR.jpg); background-position: top !important;">
-                   <h1 class="text-shadow" [ngStyle]="{'font-size': onDesktop ? '2vw' : '5vw' }">USC Tour AR</h1>
+                   <h1 class="text-shadow"  style="font-size: 2vw;">USC Tour AR</h1>
                 </div>
                 <div class="back" style="text-align: center; padding: 0%;">
                     <h1 class="proj-title">USC Tour AR</h1>
@@ -31,10 +30,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '0.5%' : '5%'}">
+        <div class="proj-col card">
             <div class="flip">
                 <div class="front" style="background-image: url(../../../../assets/blockDestroyer.jpg); background-position: top !important;">
-                   <h1 class="text-shadow" [ngStyle]="{'font-size': onDesktop ? '2vw' : '5vw' }">Block Destroyer</h1>
+                   <h1 class="text-shadow" style="font-size: 2vw;">Block Destroyer</h1>
                 </div>
                 <div class="back" style="text-align: center; padding: 0%;">
                     <h1 class="proj-title">Block Destroyer</h1>
@@ -43,43 +42,37 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3"> </div>
     </div>
 
-    
-    <!-- <div class="row" *ngIf="!onDesktop">
-        <div class="col-sm-3" style="width: 23.5%;"> </div>
-        <div class="col-sm-2 card" style="padding: 2%; margin: 5%">
+<!-- Due to the complexity of the flip card I am having to make a separate card for mobile -->
+    <div class="row" style="width: 100vw; margin: 0; padding: 0 10%;" *ngIf="!onDesktop">
+        <div class="row mobile">
             <div class="flip">
                 <div class="front" style="background-image: url(../../../../assets/hoh.jpg)">
-                    <h1 class="text-shadow" [ngStyle]="{'font-size': onDesktop ? '2vw' : '5vw' }">Outdoorist</h1>
+                   <h1 class="text-shadow" style="font-size: 5vw;">Outdoorist</h1>
                 </div>
                 <div class="back" style="text-align: center; padding: 0%;">
                     <h1 class="proj-title">Outdoorist</h1>
-                    <h5 class="proj-desc">iOS app to track outdoor adventures, learn about new destinations, and plan trips
-                    </h5>
+                    <h5 class="proj-desc">iOS app to track outdoor adventures, learn about new destinations, and plan trips</h5>
                     <a href="https://apps.apple.com/app/id1489423707" class="card-button">View</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '0.5%' : '5%'}">
+        <div class="row mobile">
             <div class="flip">
-                <div class="front"
-                    style="background-image: url(../../../../assets/tourAR.jpg); background-position: top !important;">
-                    <h1 class="text-shadow" [ngStyle]="{'font-size': onDesktop ? '2vw' : '5vw' }">USC Tour AR</h1>
+                <div class="front" style="background-image: url(../../../../assets/tourAR.jpg); background-position: top !important;">
+                   <h1 class="text-shadow" style="font-size: 5vw;">USC Tour AR</h1>
                 </div>
                 <div class="back" style="text-align: center; padding: 0%;">
                     <h1 class="proj-title">USC Tour AR</h1>
-                    <h5 class="proj-desc">iOS app that enables Augmented Reality historical tours of the University of South
-                        Carolina</h5>
+                    <h5 class="proj-desc">iOS app that enables Augmented Reality historical tours of the University of South Carolina</h5>
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 card" [ngStyle]="{'padding': onDesktop ? '0' : '2%', 'margin': onDesktop ? '0.5%' : '5%'}">
+        <div class="row mobile">
             <div class="flip">
-                <div class="front"
-                    style="background-image: url(../../../../assets/blockDestroyer.jpg); background-position: top !important;">
-                    <h1 class="text-shadow" [ngStyle]="{'font-size': onDesktop ? '2vw' : '5vw' }">Block Destroyer</h1>
+                <div class="front" style="background-image: url(../../../../assets/blockDestroyer.jpg); background-position: top !important;">
+                   <h1 class="text-shadow" style="font-size: 5vw;">Block Destroyer</h1>
                 </div>
                 <div class="back" style="text-align: center; padding: 0%;">
                     <h1 class="proj-title">Block Destroyer</h1>
@@ -88,6 +81,5 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3"> </div>
-    </div> -->
+    </div>
 </div>
