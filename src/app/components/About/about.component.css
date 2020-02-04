@@ -12,3 +12,33 @@ div, h1, .row {
 .col-sm-3 {
     padding-bottom: 2%;
 }
+.image-cropper {
+    margin: 0;
+    border: 1px solid white;
+    float: center;
+    text-align: center;
+    border-radius: 100%;
+    background-size: cover;
+    background-image: url('../../../assets/Colby.jpg');
+}
+.img-col {
+    width: 23%;
+    height: 23%;
+    margin: 1%;
+    display: inline-block;
+    /* filter: brightness(1); */
+}
+.img-col:hover {
+    transform: scale(1.05);
+    transition-duration: 200ms;
+    filter: brightness(1.1);
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+}

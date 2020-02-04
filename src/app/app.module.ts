@@ -21,7 +21,7 @@ import { ProjectSectionComponent } from './components/Home/project-section/proje
     TitleSectionComponent,
     SkillsSectionComponent,
     ExperienceSectionComponent,
-    ProjectSectionComponent
+    ProjectSectionComponent,
   ],
   imports: [
     BrowserModule,

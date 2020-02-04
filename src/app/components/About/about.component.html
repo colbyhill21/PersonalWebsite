@@ -7,18 +7,16 @@
 <div style="height: 50px; background-color: #575757">
     <!-- prevent nav bar from overlapping content on mobile -->
 </div>
-<div class="row"
-    style="padding: 3% 5% 0; margin: 0; font-family: Raleway; color: white; background-color: #575757; font-size: 9vmin"
-    [ngStyle]="{'font-size': onDesktop ? '9vmin' : '12vmin'}">
-    About Me
-</div>
-<div style="padding: 1% 5%; margin: 0; font-family: lato; background-color: #575757">
-    <div class="row">
-        <div class="col-sm-2">
-            <img src="./../../../assets/Colby.jpg" alt="Professional Headshot" class="aboutImage"
-                [ngStyle]="{'margin-bottom': onDesktop ? '0%' : '3%' }">
-        </div>
-        <div class="col-sm-10" style="overflow-wrap: break-word; font-size: 2.5vmin">
+
+
+
+<div style="padding: 4% 12%; margin: 0; font-family: lato; background-color: black; background-image: url(../../../../assets/scenery3.jpg); background-size: cover;">
+    <div class="row" style="padding: 0 0 8% 0; text-align: center; margin: 0;">
+        <h1 class="header"[ngStyle]="{'font-size': onDesktop ? '4.5vw' : '8vw' }">About Me
+        </h1>
+    </div>
+    <div class="row" style="background: rgba(26, 37, 47, 0.85); padding: 2%; margin-bottom: 2%; text-align: justify; border-radius: 30px;">
+        <div class="col-sm-12" style="overflow-wrap: break-word; font-size: 3vmin; font-family: Lato, sans-serif;">
             My name is Colby Hill. As a senior at the University of South Carolina, I am pursuing a Bachelor's in
             Computer Science.
             In May 2020, I will graduate with Leadership Distinction in Research as well as an Information Assurance and
@@ -36,27 +34,37 @@
             and wellness.
         </div>
     </div>
-    <div class="row"
-        style="padding: 2% 0%; margin: 0; font-family: Raleway; background-color: #575757; font-size: 7vmin">
-        Interests
-        <p style="overflow-wrap: break-word; font-size: 2.5vmin; font-family: lato">
-            Outside of school, work, and volunteering, my interests include hiking, skiing, kayaking, traveling,
-            motorcycling,
-            fishing, puzzle-solving, and bowling.
-        </p>
+</div>
+<div style="padding: 4% 12%; margin: 0; font-family: lato; background-color: black; background-image: url(../../../../assets/interest4.jpg); background-size: cover;">
+    <div class="row header" style="padding: 2%; text-align: center; margin: 2%;">
+        <h1 class="header" [ngStyle]="{'font-size': onDesktop ? '4vw' : '8vw' }">Interests
+        </h1>
     </div>
-    <div class="row" style="padding: 0; margin: 0; background-color: #575757">
-        <div class="col-sm-3">
-            <img src="./../../../assets/skiing.jpg" alt="Skiing at Snowshoe, WV" class="aboutImage">
-        </div>
-        <div class="col-sm-3">
-            <img src="./../../../assets/hiking.jpeg" alt="Hiking at Mount Baker, WA" class="aboutImage">
-        </div>
-        <div class="col-sm-3">
-            <img src="./../../../assets/fishing.jpg" alt="Fishing on a boat in Sandy Run, SC" class="aboutImage">
-        </div>
-        <div class="col-sm-3">
-            <img src="./../../../assets/hotair.jpeg" alt ="About to takeoff in a Hot Air Balloon in Albuquerque, NM" class="aboutImage">
+    <div class="row" style="padding: 2%; margin: 0; font-family: Lato, sans-serif; font-size: 7vmin; background: rgba(26, 37, 47, 0.85); border-radius: 30px;">
+        
+        <p style="overflow-wrap: break-word; text-align: justify; font-size: 3vmin; font-family: Lato, sans-serif; padding: 2%;">
+            Whenever I'm not working, volunteering, or creating, you will likely find me outdoors.
+            I have an unequivocal passion for hiking and traveling with my fiancé Hayden. 
+            Ever since learning to ski, I've done everything I can to get back to the slopes. 
+            When I'm home, I'm attempting to follow along with Gordon Ramsay cooking videos, 
+            playing chess, hanging out with friends, or watching Netflix.
+            
+            
+<!--  fishing, bowling, chess, crosswords -->
+        </p>
+        <div class="col-sm-12">
+            <div class="img-col">
+                <img src="./../../../assets/skiing.jpg" alt="Skiing at Snowshoe, WV" class="aboutImage">
+            </div>
+            <div class="img-col">
+                <img src="./../../../assets/hiking.jpeg" alt="Hiking at Mount Baker, WA" class="aboutImage">
+            </div>
+            <div class="img-col">
+                <img src="./../../../assets/fishing.jpg" alt="Fishing on a boat in Sandy Run, SC" class="aboutImage">
+            </div>
+            <div class="img-col">
+                <img src="./../../../assets/hotair.jpeg" alt ="About to takeoff in a Hot Air Balloon in Albuquerque, NM" class="aboutImage">
+            </div>
         </div>
     </div>
 </div>
