@@ -58,7 +58,6 @@
 }
 .icon:hover {
     transform: translateY(-10%);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.21); 
 }
 
 .down {
@@ -95,16 +94,30 @@
     transform-style: preserve-3d;
     animation-name: pulse_animation;
     animation-duration: 3000ms;
-    transform-origin:70% 70%;
+    transform-origin: 70% 70%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 .about-text {
     font-family: "Lato", sans-serif;
-    margin: 0;
-    padding: 0;
     height: 100% !important;
     vertical-align: middle;
     display: table-cell;
-    
 }
+.card-button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 2%;
+    padding: 1vmin 4vw;
+    background-color: #fff;
+    color: #777;
+    box-sizing: inherit;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.21);
+  }
