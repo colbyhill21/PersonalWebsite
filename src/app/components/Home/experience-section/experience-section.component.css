@@ -8,12 +8,10 @@
 .exp-card:hover {
     transform: scale(1.04) translateY(-3%);
 }
-
 .comp-icon {
     vertical-align: middle;
     border-radius: 100%;
 }
-
 .comp-title {
     font-family: "Lato",sans-serif;
     font-weight: 600;
