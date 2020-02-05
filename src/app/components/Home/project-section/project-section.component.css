@@ -110,7 +110,7 @@ h1 {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   padding: 0;
-  margin: 0.1;
+  margin: 0;
 }
 .card {
   min-width: 100px;
@@ -125,4 +125,21 @@ h1 {
 
 .mobile {
   padding: 3% 0;
+  margin: 0;
+}
+
+.mobile-front {
+  background: #313131;
+  position: relative;
+  display: block;
+  margin: 0;
+  margin-right: 2px;
+  width: 100%;
+  color: white;
+  background-size: cover !important;
+  border-radius: 10px;
+}
+.mobile-heading {
+  text-transform: uppercase;
+  font-weight: 900;
 }
