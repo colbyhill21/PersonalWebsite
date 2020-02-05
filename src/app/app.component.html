@@ -6,19 +6,21 @@
 </head>
 
 <!-- Container of the nav bar on desktop-->
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="background-color: #1a252f;" *ngIf="navVisible">
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse bkg" *ngIf="navVisible">
 	<div class="container" style="float: left; padding: 0 1%; margin: 0;">
-		<a class="navbar-brand" style="font-family: Raleway">Colby Hill</a>
+		<a class="navbar-brand" style="font-family: Raleway;">Colby Hill</a>
 		<ul class="nav navbar-nav nb">
 			<li class="nav-item"><a class="nav-link nb" routerLink="/" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-			<li class="nav-item"><a class="nav-link nb" routerLink="about" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">About Me</a></li>
-			<li class="nav-item"><a class="nav-link nb" routerLink="experience" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Experience</a></li>
+			<li class="nav-item"><a class="nav-link nb" href="#experience-cards" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Experience</a></li>
+			<li class="nav-item"><a class="nav-link nb" href="#project-cards" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Projects</a></li>
+			<li class="nav-item"><a class="nav-link nb" href="#skill-cards" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Skills</a></li>
+			<li class="nav-item"><a class="nav-link nb" routerLink="about" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">More About Me</a></li>
 		</ul>
 	</div>
 </nav>
 
 <!-- Container of the nav bar on mobile-->
-<nav class="navbar navbar-fixed-top navbar-dark bg-inverse" style="background-color: #1a252f; width: 100vw;" *ngIf="!navVisible">
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse bkg" style="width: 100vw;" *ngIf="!navVisible">
 	<button (click)="showMobileNav=!showMobileNav" style="color: white; font-size: 2.5em; background: none; border: none; padding-top: 1.5%">
 		<div class="menu-bar"> </div>
 		<div class="menu-bar"> </div>
@@ -28,26 +30,23 @@
 		<ul class="nav navbar-nav nb" style="float: left" routerLinkActive="active">
 			<li class="nav-item"><a (click)="showMobileNav=!showMobileNav" class="nav-link nb" routerLink="">Home</a></li>
 			<li class="nav-item"><a (click)="showMobileNav=!showMobileNav" class="nav-link nb" routerLink="about">About Me</a></li>
-			<li class="nav-item"><a (click)="showMobileNav=!showMobileNav" class="nav-link nb" routerLink="experience">Experience</a></li>
 		</ul>
 	</div>
 </nav>
 
 <router-outlet></router-outlet>
 
-<div class="footer-row" style="padding: 0; margin: 0; text-align: center; overflow: visible">
+<div class="footer-row bkg" style="padding: 0; margin: 0; text-align: center; overflow: visible;">
 	<div class="footer-col">
-		<a class="linkedin-icon" href="https://www.linkedin.com/in/colby-h/"> <span class="mdi mdi-linkedin"></span> </a>
+		<a class="icon" href="https://www.linkedin.com/in/colby-h/"> <span class="mover mdi mdi-linkedin"></span> </a>
 	</div>
 	<div class="footer-col">
-		<a class="linkedin-icon" href="https://github.com/colbyhill21"> <span class="mdi mdi-github-circle"></span> </a>
+		<a class="icon" href="https://github.com/colbyhill21"> <span class="mover mdi mdi-github-circle"></span> </a>
 	</div>
 	<div class="footer-col">
-		<a class="linkedin-icon" href="https://stackoverflow.com/users/7553610/colby-hill"> <span class="mdi mdi-stack-overflow"></span> </a>
+		<a class="icon" href="https://stackoverflow.com/users/7553610/colby-hill"> <span class="mover mdi mdi-stack-overflow"></span> </a>
 	</div>
 </div>
-<div class="row" style="text-align: center; color: white; padding: 0; margin: 1% 0 0; background-color: #1a252f; width: 100vw;">
-	Colby Hill &copy;2019
+<div class="row bkg" style="text-align: center; color: white; padding: 1% 0 0; margin: 0; width: 100vw;">
+	Colby Hill &copy;{{currentYear}}
 </div>
-
-

@@ -10,6 +10,7 @@ export class AppComponent {
   innerWidth: any;
   navVisible = true;
   showMobileNav = false;
+  currentYear = new Date().getFullYear();
   ngOnInit() {
     this.innerWidth = window.innerWidth;
     if (this.innerWidth < 768) {

@@ -1,12 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 
 @Component({
-    selector: 'app-about',
-    templateUrl: './about.component.html',
-    styleUrls: ['./about.component.css']
+    selector: 'app-skills-section',
+    templateUrl: './skills-section.component.html',
+    styleUrls: ['./skills-section.component.css']
 })
-
-export class AboutComponent {
+export class SkillsSectionComponent {
     onDesktop = true;
     innerWidth: any;
     ngOnInit() {

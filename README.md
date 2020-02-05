@@ -20,3 +20,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## How to get started
 just run `npm install` in the project root directory
+
+## How to add a component
+`ng g c component-name --module app`

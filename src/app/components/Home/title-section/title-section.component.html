@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/36ebd5e87f.css">
+</head>
+
+<div id="header-div">
+    <h1 id="header-main-block" [ngStyle]="{'font-size': onDesktop ? '10vmin' : '17vmin' }"> <b>Colby Hill</b></h1>
+    <h2 id="header-subtitle-block" [ngStyle]="{'font-size': onDesktop ? '4.2vmin' : '7vmin' }"> Software Engineer</h2>
+    <div class="header-icons">
+        <a aria-label="Send email" href="mailto:colbyahill21@gmail.com"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/colby-h/"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a aria-label="My Github" target="_blank" href="https://github.com/colbyhill21"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <a aria-label="My StackOverflow" target="_blank" href="https://stackoverflow.com/users/7553610/colby-hill"><i class="icon fab fa-stack-overflow" aria-hidden="true"></i></a>
+        
+    </div>
+    <a class="down" href="#about" data-scroll=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
+
+<div class="row" id="about" style="width: 100vw; background-color: #121904; color: white; margin: 0; display: flex; flex-flow: row wrap;"
+    [ngStyle]="{'padding': onDesktop ? '2% 6%' : '3% 0'}">
+    <div class="col-sm-6" style="text-align: center; vertical-align: middle;" [ngStyle]="{'width': onDesktop ? '50%' : '100%' }">
+        <p class="about-text" [ngStyle]="{'font-size': onDesktop ? '1.8vw' : '3.5vw', 'padding': onDesktop ? '3% 1%' : '2% 1%'}">
+            Hi, I'm Colby! I'm a senior at the University of South Carolina, and will earn my Bachelor of Computer Science in May 2020.
+            I have a serious passion for creating and learning, I want to build things that make a difference. 
+            That's why I’m excited to make a big impact at a high growth company.
+        </p>
+        <a href="/about" class="card-button" [ngStyle]="{'font-size': onDesktop ? '1.2vw' : '3vw'}">Learn More</a>
+    </div>
+    <div class="col-sm-6" style="float: center; text-align: center;" 
+    [ngStyle]="{'margin-bottom': onDesktop ? '0' : '2%', 'width': onDesktop ? '50%' : '100%', 'padding-left': onDesktop ? '0' : '1%'}">
+
+        <div class="image-cropper" [ngStyle]="{'width': onDesktop ? '20vw' : '40vw', 'height': onDesktop ? '20vw' : '40vw'}"> </div>
+    </div>
+</div>

@@ -1,14 +1,17 @@
-.linkedin-icon {
+.icon {
     font-size: 7vmin;
     color: #fff !important;
 }
-
-.footer-row {
+.mover:hover {
+    color: #2c608e;
+}
+.bkg {
     background-color: #1a252f;
+}
+.footer-row {
     width: 100vw;
     height: 10vmin;
 }
-
 .footer-col {
     text-align: center;
     padding: 1vmin 0.5vmin;
@@ -16,16 +19,13 @@
     height: 100%;
     display: inline-block;
 }
-
 .nb {
     color: white;
     font-family: 'Raleway';
 }
-
 .active-link-css {
    text-decoration: underline;
 }
-
 .menu-bar {
   width: 35px;
   height: 5px;
@@ -33,7 +33,7 @@
   margin: 6px 0;
 }
 .nav-link:hover {
-    background-color: #263645;
+    background-color: #313b44;
 }
 .nav-link:active, .nav-link:after, .nav-link:active:after, .nav-link:not(:hover) {
     background-color: #1a252f;

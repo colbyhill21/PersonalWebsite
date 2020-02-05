@@ -1,0 +1,74 @@
+<div style="background-size: cover; opacity: 95%; padding-bottom: 3%; margin-bottom: 0;"
+    [ngStyle]="{'background-image': onDesktop ? 'url(../../../../assets/iceland.jpg)' : 'null', 'background-color': onDesktop ? 'black' : 'gray'}">
+
+    <div class="row" style="padding: 2% 10px; text-align: center; margin: 0% auto;" id="skill-cards">
+        <h1 style="text-align: center; width: 100%; color: #ffffff; text-transform: uppercase;"
+        [ngStyle]="{'font-size': onDesktop ? '3vw' : '8vw' }">Skills
+        </h1>
+    </div>
+
+    <div class="row" style="vertical-align: middle; text-align: center; display: flex; flex-flow: row wrap; width: 100vw; margin: 0; padding: 0 10%">
+        <div class="skill-col skill-card" [ngStyle]="{'width': onDesktop ? '29%' : '100%'}">
+            <h1> <span class="icon mdi mdi-server" [ngStyle]="{'font-size': onDesktop ? '8vmin;' : '10vmin'}"></span></h1> 
+            <h3 class="skill-category" [ngStyle]="{'font-size': onDesktop ? '3vmin;' : '5vmin'}"> Back end</h3>
+            <ul class="skill-list" [ngStyle]="{'font-size': onDesktop ? '2.5vmin;' : '3.5vmin'}">
+                <li class="skill-list-item">Express</li>
+                <li class="skill-list-item">Python</li>
+                <li class="skill-list-item">Spring</li>
+                <li class="skill-list-item">MongoDB</li>
+            </ul>
+        </div>
+        <div class="skill-col skill-card" [ngStyle]="{'width': onDesktop ? '29%' : '100%'}">
+            <h1><span class="icon mdi mdi-monitor-screenshot" [ngStyle]="{'font-size': onDesktop ? '8vmin;' : '10vmin'}"></span></h1>
+            <h3 class="skill-category" [ngStyle]="{'font-size': onDesktop ? '3vmin;' : '5vmin'}"> Front end</h3> 
+            <ul class="skill-list" [ngStyle]="{'font-size': onDesktop ? '1.5vmin;' : '3.5vmin'}">
+                <li class="skill-list-item">NodeJS</li>
+                <li class="skill-list-item">Angular</li>
+                <li class="skill-list-item">HTML5</li>
+                <li class="skill-list-item">CSS3</li>
+            </ul>
+        </div>
+        <div class="skill-col skill-card" [ngStyle]="{'width': onDesktop ? '29%' : '100%'}">
+            <h1><span class="icon mdi mdi-tools" [ngStyle]="{'font-size': onDesktop ? '8vmin;' : '10vmin'}"></span></h1>
+            <h3 class="skill-category" [ngStyle]="{'font-size': onDesktop ? '3vmin;' : '5vmin'}"> Deployment</h3>
+            <ul class="skill-list" [ngStyle]="{'font-size': onDesktop ? '2.5vmin;' : '3.5vmin'}">
+                <li class="skill-list-item">Kubernetes</li>
+                <li class="skill-list-item">Docker</li>
+                <li class="skill-list-item">Jenkins</li>
+                <li class="skill-list-item">Github Actions</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" style="vertical-align: middle; text-align: center; display: flex; flex-flow: row wrap; width: 100vw; margin: 0; padding: 0 10%;">
+        <div class="skill-col skill-card" [ngStyle]="{'width': onDesktop ? '29%' : '100%'}">
+            <h1> <span class="icon mdi mdi-cloud" [ngStyle]="{'font-size': onDesktop ? '8vmin;' : '10vmin'}"></span></h1>
+            <h3 class="skill-category" [ngStyle]="{'font-size': onDesktop ? '3vmin;' : '5vmin'}"> Cloud</h3>
+            <ul class="skill-list" [ngStyle]="{'font-size': onDesktop ? '2.5vmin;' : '3.5vmin'}">
+                <li class="skill-list-item">AWS</li>
+                <li class="skill-list-item">Rancher</li>
+                <li class="skill-list-item">Pivotal</li>
+                <li class="skill-list-item">Azure</li>
+            </ul>
+        </div>
+        <div class="skill-col skill-card" [ngStyle]="{'width': onDesktop ? '29%' : '100%'}">
+            <h1> <span class="icon mdi mdi-cellphone-iphone" [ngStyle]="{'font-size': onDesktop ? '8vmin;' : '10vmin'}"></span></h1>
+            <h3 class="skill-category" [ngStyle]="{'font-size': onDesktop ? '3vmin;' : '5vmin'}"> Mobile</h3>
+            <ul class="skill-list" [ngStyle]="{'font-size': onDesktop ? '2.5vmin;' : '3.5vmin'}">
+                <li class="skill-list-item">Swift</li>
+                <li class="skill-list-item">Cocoa Pods</li>
+                <li class="skill-list-item">Java</li>
+                <li class="skill-list-item">MPAndroidChart</li>
+            </ul>
+        </div>
+        <div class="skill-col skill-card" [ngStyle]="{'width': onDesktop ? '29%' : '100%'}">
+            <h1> <span class="icon mdi mdi-chart-bell-curve-cumulative" [ngStyle]="{'font-size': onDesktop ? '8vmin;' : '10vmin'}"></span> </h1>
+            <h3 class="skill-category" [ngStyle]="{'font-size': onDesktop ? '3vmin;' : '5vmin'}"> Analytics</h3> 
+            <ul class="skill-list" [ngStyle]="{'font-size': onDesktop ? '2.5vmin;' : '3.5vmin'}">
+                <li class="skill-list-item">R</li>
+                <li class="skill-list-item">Matlab</li>
+                <li class="skill-list-item">Hadoop</li>
+                <li class="skill-list-item">Tableau</li>
+            </ul>
+        </div>
+    </div>
+</div>
