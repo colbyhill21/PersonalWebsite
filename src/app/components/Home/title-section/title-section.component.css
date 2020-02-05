@@ -5,8 +5,8 @@
     height: calc(100vh - 50px);
     padding: 0;
     margin: 0;
+    background-color: #343e1c;
     background-size: cover;
-    background-image: url('../../../../assets/background.gif');
     background-position: bottom;
 }
 
