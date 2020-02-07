@@ -1,5 +1,6 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link href="https://cdn.materialdesignicons.com/4.1.95/css/materialdesignicons.min.css"
 	  rel="stylesheet">
 <!-- grab resources necessary for the page -->
@@ -7,9 +8,9 @@
 
 <!-- Container of the nav bar on desktop-->
 <nav class="navbar navbar-fixed-top navbar-dark bg-inverse bkg" *ngIf="navVisible">
-	<div class="container" style="float: left; padding: 0 1%; margin: 0;">
-		<a class="navbar-brand" style="font-family: Raleway;">Colby Hill</a>
-		<ul class="nav navbar-nav nb">
+	<div class="container" style="float: left; padding: 0 1%; margin: 0; width: 100vw;">
+		<a class="navbar-brand" style="font-family: Montserrat; color: white;">Colby Hill</a>
+		<ul class="nav navbar-nav nb" style="float: right; font-family: Montserrat;" >
 			<li class="nav-item"><a class="nav-link nb" routerLink="/" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
 			<li class="nav-item"><a class="nav-link nb" href="#experience-cards" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Experience</a></li>
 			<li class="nav-item"><a class="nav-link nb" href="#project-cards" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Projects</a></li>
