@@ -1,12 +1,14 @@
-<div style="background-color: #1d2903; padding-bottom: 3%;">
+<div style="background-color: #1B1B1B; padding-bottom: 3%;">
 
-    <div class="row" style="padding: 2% 10px; text-align: center; margin: 0% auto;" id="project-cards">
-        <h1 style="text-align: center; width: 100%; color: #ffffff; text-transform: uppercase;"
-        [ngStyle]="{'font-size': onDesktop ? '3vw' : '8vw' }">Projects
+    <div class="row exp" style="padding: 2% 10px; text-align: center; margin: 0 auto; padding-left: 5%;" id="experience-cards">
+        <h1 style="text-align: left; width: 100%; color: #ffffff; letter-spacing: 3px;"
+        [ngStyle]="{'font-size': onDesktop ? '3.5vw' : '8vw' }">
+            Projects
         </h1>
+        <div style="background-color: #1a6b3c; height: 5px; width: 250px; margin: 1% 0;"></div>
     </div>
 
-    <div class="row" style="width: 100vw; margin: 0; padding: 0 10%; display: flex; flex-flow: row wrap;" *ngIf="onDesktop">
+    <div class="row" style="width: 100vw; margin: 0; padding: 1% 10%; display: flex; flex-flow: row wrap;" *ngIf="onDesktop">
         <div class="proj-col card">
             <div class="flip">
                 <div class="front" style="background-image: url(../../../../assets/hoh.jpg)">
