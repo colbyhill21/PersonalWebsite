@@ -6,7 +6,7 @@
     color: #2c608e;
 }
 .bkg {
-    background-color: #2d9a5b;
+    background-color: #005A26;
 }
 .footer-row {
     width: 100vw;
@@ -36,5 +36,5 @@
     background-color: #298b52;
 }
 .nav-link:active, .nav-link:after, .nav-link:active:after, .nav-link:not(:hover) {
-    background-color: #2d9a5b;
+    background-color: #005A26;
 }
