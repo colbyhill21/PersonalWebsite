@@ -5,7 +5,7 @@
         [ngStyle]="{'font-size': onDesktop ? '3.5vw' : '8vw' }">
             Projects
         </h1>
-        <div style="background-color: #1a6b3c; height: 5px; width: 250px; margin: 1% 0;"></div>
+        <div style="background-color: #1a6b3c; height: 5px; margin: 1% 0;" [ngStyle]="{'width': onDesktop ? '250px' : '125px' }"></div>
     </div>
 
     <div class="row" style="width: 100vw; margin: 0; padding: 1% 10%; display: flex; flex-flow: row wrap;" *ngIf="onDesktop">
@@ -72,7 +72,7 @@
         </div>
         <div class="row mobile">
             <div class="mobile-front" style="background-image: url(../../../../assets/blockDestroyer.jpg)">
-                <h1 class="mobile-heading" style="font-size: 6vw; padding: 1em 0.5em;"> Block Destroyer</h1>
+                <h1 class="mobile-heading" style="font-size: 6vw; padding: 1em 0.5em;"> Block<br>Destroyer</h1>
                 <div
                     style="margin: 10% 0 0 0; vertical-align: bottom; padding: 2%; text-align: center; background: rgba(13, 18, 24, 0.75);">
                     <h5 class="proj-desc" [ngStyle]="{'font-size': onDesktop ? '3vw' : '1.25em' }">
