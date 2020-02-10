@@ -119,3 +119,30 @@
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.21);
   }
+
+.aboutMeImage {
+    width: 60%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-button {
+    font-weight: 900;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    font-family: "Montserrat";
+    padding: 1% 3vw;
+    text-transform: none;
+    background: transparent;
+    color: white;
+    box-sizing: inherit;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 20px;
+    transition: all .2s;
+    transform: translateY(-0.3rem);
+  }

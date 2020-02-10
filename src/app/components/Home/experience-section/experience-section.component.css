@@ -1,33 +1,30 @@
 .exp-card {
     background-color: white;
-    opacity: 90%;
+    opacity: 92%;
     transition-property: all;
     transition-duration: 0.35s;
     transition-delay: 0s;
+    border-radius: 30px;
 }
 .exp-card:hover {
     transform: scale(1.04) translateY(-3%);
 }
-.comp-icon {
-    vertical-align: middle;
-    border-radius: 100%;
-}
 .comp-title {
-    font-family: "Lato",sans-serif;
-    font-weight: 600;
+    font-family: "Montserrat";
+    font-weight: 900;
     vertical-align: middle;
-    text-align: center;
-    margin-bottom: 7%;
+    text-align: left;
+    margin-bottom: 5%;
 }
 .comp-subtitle {
-    font-family: "Lato",sans-serif;
+    font-family: "Montserrat";
     font-weight: 500;
     padding: 0;
     vertical-align: middle;
     text-align: left;
 }
 .bullet-list {
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat";
     font-weight: 400;
     text-align: left;
     margin: 0;
