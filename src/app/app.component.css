@@ -38,3 +38,12 @@
 .nav-link:active, .nav-link:after, .nav-link:active:after, .nav-link:not(:hover) {
     background-color: #005A26;
 }
+.logo-icon {
+    height: 50px;
+    padding: 5px;
+    margin: 0;
+}
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+}
