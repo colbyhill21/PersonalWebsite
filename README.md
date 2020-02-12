@@ -1,25 +1,22 @@
-This is the repository for my personal website. I designed and developed it using Angular, HTML, and CSS! 
-I leveraged numerous AWS services including S3, Route 53, Cloudfront, ACM, CodeBuild, CloudTrail, and CodePipeline to handle the website's storage, hosting, content delivery, certificate management, and CI/CD. I am using Route 53 to manage the hosted zone for the domain which is `https://www.colby-hill.com` and Cloudfront for global content delivery. Additionally I am using CodePipeline and CodeBuild to automatically build, and deploy upon every commit to this repository.
+# Personal Portfolio.
+This is the repository for my personal website. Hosted at `https://www.colby-hill.com`
 
+# Tools and Technologies 
+I designed the website using Adobe XD and developed it using Angular, HTML5, and CSS3. I leveraged numerous AWS services including S3, Route 53, Cloudfront, ACM, CodeBuild, CodePipeline, and CloudTrail to handle the website's storage, hosting, content delivery, certificate management, and CI/CD.
 
+# Continuous Integration and Deployment
+This repository is currently configured to automatically run testing and deploy to my S3 bucket upon each commit. This is handled using AWS's CodeBuild and CodePipeline services.
 
-### Screenshot of the homepage on Desktop:
-<img src="https://i.imgur.com/aFEZjei.png" height="400" alt="Screenshot of the UI of the homepage">
+### Screenshot of the Homepage:
+<img src="https://i.imgur.com/zVh2ZDP.jpg" height="400" alt="Screenshot of the homepage">
 
-### Screenshot of the homepage from Mobile:
-<img src="https://i.imgur.com/540FFTZ.jpg" height="400" alt="Screenshot of the UI of the homepage">
-
-## Development server
-
-Run `ng serve -o` for a dev server.
-
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Screenshot of the Introduction:
+<img src="https://i.imgur.com/9l3XVZi.png" height="400" alt="Screenshot of the introduction section">
 
 ## How to get started
-just run `npm install` in the project root directory
+First run `npm install` in the project root directory to install all dependencies.
+Then run `ng serve -o` which will build and then launch a server that will automatically open your default browser
 
 ## How to add a component
+Since there are multiple modules in this project, you have to used the `--module` tag in order for the Anguar-CLI to 
 `ng g c component-name --module app`
