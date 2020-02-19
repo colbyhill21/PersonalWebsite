@@ -22,8 +22,12 @@
 	</button>
 	<div class="container" style="padding: 3% 1%; margin: 0;" *ngIf="showMobileNav">
 		<ul class="nav navbar-nav nb" style="float: left" routerLinkActive="active">
-			<li class="nav-item"><a (click)="showMobileNav=!showMobileNav" class="nav-link nb" routerLink="">Home</a></li>
-			<li class="nav-item"><a (click)="showMobileNav=!showMobileNav" class="nav-link nb" routerLink="about">About Me</a></li>
+			<li class="nav-item"> <a class="nav-link nb" href="#header-div" data-scroll="" (click)="hideMobileNav()">Home</a></li>
+			<li class="nav-item"> <a class="nav-link nb" href="#experience-section" data-scroll="" (click)="hideMobileNav()">Experience</a></li>
+			<li class="nav-item"> <a class="nav-link nb" href="#project-section" data-scroll="" (click)="hideMobileNav()">Projects</a></li>
+			<li class="nav-item"> <a class="nav-link nb" href="#skills-section" data-scroll="" (click)="hideMobileNav()">Skills</a></li>
+			<li class="nav-item"> <a class="nav-link nb" href="about/#more-about-me" data-scroll="" (click)="hideMobileNav()">More About Me</a></li>
+			<a class="down" ></a>
 		</ul>
 	</div>
 </nav>

@@ -32,5 +32,9 @@ export class AppComponent {
     }
   }
 
+  hideMobileNav() {
+    this.showMobileNav = false;
+  }
+
 }
 
