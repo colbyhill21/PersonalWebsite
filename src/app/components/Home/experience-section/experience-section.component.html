@@ -1,7 +1,8 @@
 <div style="background-image: url(../../../../assets/forest-dark.jpg); background-size: cover; background-color: #040729; opacity: 100%; padding-bottom: 3%;">
-    <div class="row exp" style="padding: 2% 10px; text-align: center; margin: 0 auto; padding-left: 5%;" id="experience-section">
+    <div class="row exp" style="text-align: center; margin: 0 auto; padding-left: 5%;" id="experience-section"
+    [ngStyle]="{'padding': onDesktop ? '2% 10px 2% 10px' : '10% 10px 2% 10px'}">
         <h1 style="text-align: left; width: 100%; color: #ffffff; letter-spacing: 3px;"
-        [ngStyle]="{'font-size': onDesktop ? '3.5vw' : '8vw' }">
+        [ngStyle]="{'font-size': onDesktop ? '3.5vw' : '8vw'}">
             Experience
         </h1>
         <div style="background-color: #1a6b3c; height: 5px; margin: 1% 0;" [ngStyle]="{'width': onDesktop ? '250px' : '125px' }"></div>

@@ -1,6 +1,7 @@
 <div style="background-color: #1B1B1B; padding-bottom: 3%;" id="project-section">
 
-    <div class="row exp" style="padding: 2% 10px; text-align: center; margin: 0 auto; padding-left: 5%;">
+    <div class="row exp" style="text-align: center; margin: 0 auto; padding-left: 5%;"
+    [ngStyle]="{'padding': onDesktop ? '2% 10px 2% 10px' : '10% 10px 2% 10px'}">
         <h1 style="text-align: left; width: 100%; color: #ffffff; letter-spacing: 3px;"
         [ngStyle]="{'font-size': onDesktop ? '3.5vw' : '8vw' }">
             Projects
