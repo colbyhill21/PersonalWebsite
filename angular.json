@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -122,8 +123,5 @@
       }
     }
   },
-  "defaultProject": "ch-web",
-  "cli": {
-    "analytics": "e228cb85-0e5d-46ee-af69-1e0e997df521"
-  }
+  "defaultProject": "ch-web"
 }
