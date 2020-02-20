@@ -1,3 +1,6 @@
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![Actions Status](https://github.com/colbyhill21/PersonalWebsite/workflows/CI/badge.svg)](https://github.com/colbyhill21/PersonalWebsite/actions)
+
 # Personal Portfolio.
 This is the repository for my website. Hosted at `https://www.colby-hill.com`
 
