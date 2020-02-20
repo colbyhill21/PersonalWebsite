@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/Home/home.component';
 import { AboutComponent } from './components/About/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module';
 import { TitleSectionComponent } from './components/Home/title-section/title-section.component';
 import { SkillsSectionComponent } from './components/Home/skills-section/skills-section.component';
 import { ExperienceSectionComponent } from './components/Home/experience-section/experience-section.component';
@@ -26,8 +25,7 @@ import { ProjectSectionComponent } from './components/Home/project-section/proje
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
