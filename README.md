@@ -20,3 +20,8 @@ Then run `ng serve -o` which will build and then launch a server that will autom
 ## How to add a component
 Since there are multiple modules in this project, you have to use the `--module` tag for the Angular-CLI to 
 `ng g c component-name --module app`
+
+## License
+This software is licensed under the MIT License.
+
+See the [License](./LICENSE.md) for more information.
