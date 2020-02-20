@@ -6,5 +6,5 @@ import { Component, HostListener } from '@angular/core';
     styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-    
+
 }
