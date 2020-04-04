@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "ch-web"
+  "defaultProject": "ch-web",
+  "cli": {
+    "analytics": "2bd04dd7-b539-4167-94b2-8522a42f032e"
+  }
 }
