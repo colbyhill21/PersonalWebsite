@@ -8,38 +8,42 @@
         <div style="background-color: #1a6b3c; height: 5px; margin: 1% 0;" [ngStyle]="{'width': onDesktop ? '250px' : '125px' }"></div>
     </div>
 
-    <div class="row" style="vertical-align: middle; text-align: center; display: flex; flex-flow: row wrap; width: 100vw; margin: 0;">
+    <div class="row" style="vertical-align: middle; text-align: center; display: flex; flex-flow: row wrap; width: 100%; margin: 0;">
         <div class="col-sm-3" style="width: 23%;"></div> <!-- spacer -->
 
         <div class="col-sm-3 exp-card" [ngStyle]="{'width': onDesktop ? '25%' : '100%', 'padding': onDesktop ? '1% 1% 0 1%' : '2%', 'margin': onDesktop ? '1%' : '5%'}">
+            <h3 class="comp-title" [ngStyle]="{'font-size': onDesktop ? '3vmin' : '5vmin' }">Capital One</h3>
+            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">Software Engineering Intern</h3>
+            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">June 2020 - Current</h3>
+            <ul class="bullet-list" [ngStyle]="{'font-size': onDesktop ? '1.7vmin' : '3vmin' }">
+                <li class="skill-list-item">Engineering a platform that enables commercial card holders to easily manage the services they utilize</li>
+                <li class="skill-list-item">Collaborating with an Agile team to develop, test, and implement technical solutions across the full stack</li>
+                <li class="skill-list-item">Leveraging Capital One's UI component library to accelerate design implementations</li>
+                <!-- <li class="skill-list-item"></li> -->
+            </ul>
+        </div>
+
+        <div class="col-sm-3 exp-card"
+            [ngStyle]="{'width': onDesktop ? '25%' : '100%', 'padding': onDesktop ? '1% 1% 0 1%' : '2%', 'margin': onDesktop ? '1%' : '5%'}">
             <h3 class="comp-title" [ngStyle]="{'font-size': onDesktop ? '3vmin' : '5vmin' }">Krumware</h3>
-            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">Software Development Intern</h3>
+            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">Software Development Intern
+            </h3>
             <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">August 2019 - Current</h3>
             <ul class="bullet-list" [ngStyle]="{'font-size': onDesktop ? '1.7vmin' : '3vmin' }">
                 <li class="skill-list-item">Led the migration to Rancher which enabled Multi-Cloud Computing and improved application availability</li>
                 <li class="skill-list-item">Automated Kubernetes deployments and resource management workflow</li>
-                <li class="skill-list-item">Developing microservices for feature-rich progressive web applications</li>
-                <li class="skill-list-item">Utilizing Swagger UI to generate visual and interactive API documentation</li>
+                <li class="skill-list-item">Developed Express backends for feature-rich web applications</li>
+                <li class="skill-list-item">Utilized Swagger UI to create interactive API documentation</li>
             </ul>
         </div>
 
-        <div class="col-sm-3 exp-card" [ngStyle]="{'width': onDesktop ? '25%' : '100%', 'padding': onDesktop ? '1% 1%' : '2%', 'margin': onDesktop ? '1%' : '5%'}">
-            <h3 class="comp-title" [ngStyle]="{'font-size': onDesktop ? '3vmin' : '5vmin' }">Boeing</h3>
-            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">Software Engineering Intern</h3>
-            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">May 2019 - August 2019</h3>
-           <ul class="bullet-list" [ngStyle]="{'font-size': onDesktop ? '1.7vmin' : '3vmin' }">
-                <li class="skill-list-item">Architected and deployed two serverless identity management applications into production</li>
-                <li class="skill-list-item">Leveraged Continuous Integration and Deployment pipelines to maximize development efficiency</li>
-                <li class="skill-list-item">Implemented solutions to assist the collection, modification, and publication of identity data</li>
-                <li class="skill-list-item">Designed and developed a homepage for the Identity & Directory Services team</li>
-            </ul>
-        </div>
+
 
         <div class="col-sm-3"></div> <!-- spacer -->
     </div>
 
 
-    <div class="row" style="vertical-align: middle; text-align: center; display: flex; flex-flow: row wrap; width: 100vw; margin: 0">
+    <div class="row" style="vertical-align: middle; text-align: center; display: flex; flex-flow: row wrap; width: 100%; margin: 0">
         <div class="col-sm-3" style="width: 23%;"></div> <!-- spacer -->
 
         <div class="col-sm-3 exp-card" [ngStyle]="{'width': onDesktop ? '25%' : '100%', 'padding': onDesktop ? '1% 1%' : '2%', 'margin': onDesktop ? '1%' : '6%'}">
@@ -54,17 +58,33 @@
             </ul>
         </div>
 
-        <div class="col-sm-3 exp-card" [ngStyle]="{'width': onDesktop ? '25%' : '100%', 'padding': onDesktop ? '1% 1%' : '2%', 'margin': onDesktop ? '1%' : '5%'}">
+        <div class="col-sm-3 exp-card"
+            [ngStyle]="{'width': onDesktop ? '25%' : '100%', 'padding': onDesktop ? '1% 1%' : '2%', 'margin': onDesktop ? '1%' : '5%'}">
+            <h3 class="comp-title" [ngStyle]="{'font-size': onDesktop ? '3vmin' : '5vmin' }">Boeing</h3>
+            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">Software Engineering Intern
+            </h3>
+            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">May 2019 - August 2019</h3>
+            <ul class="bullet-list" [ngStyle]="{'font-size': onDesktop ? '1.7vmin' : '3vmin' }">
+                <li class="skill-list-item">Architected and deployed two serverless identity management applications into
+                    production</li>
+                <li class="skill-list-item">Leveraged Continuous Integration and Deployment pipelines to maximize development
+                    efficiency</li>
+                <li class="skill-list-item">Implemented solutions to assist the collection, modification, and publication of
+                    identity data</li>
+                <li class="skill-list-item">Designed and developed a homepage for the Identity & Directory Services team</li>
+            </ul>
+        </div>
+        <!-- <div class="col-sm-3 exp-card" [ngStyle]="{'width': onDesktop ? '25%' : '100%', 'padding': onDesktop ? '1% 1%' : '2%', 'margin': onDesktop ? '1%' : '5%'}">
             <h3 class="comp-title" [ngStyle]="{'font-size': onDesktop ? '3vmin' : '5vmin' }">University Of South Carolina</h3>
             <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">Teaching Assistant</h3>
-            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">May 2019 - August 2019</h3>
+            <h3 class="comp-subtitle" [ngStyle]="{'font-size': onDesktop ? '2vmin' : '3.5vmin' }">August 2018 - May 2019</h3>
            <ul class="bullet-list" [ngStyle]="{'font-size': onDesktop ? '1.7vmin' : '3vmin' }">
                 <li class="skill-list-item">Led biweekly labs for Algorithmic Design I/II courses</li>
                 <li class="skill-list-item">Overviewed each lab assignment with 25-30 students in a pre-lab discussion</li>
                 <li class="skill-list-item">Supported all students with one-on-one personalized assistance during labs</li>
                 <li class="skill-list-item">Reinforced topics presented by the professor by reviewing material with students</li>
             </ul>
-        </div>
+        </div> -->
 
         <div class="col-sm-3"></div> <!-- spacer -->
     </div>

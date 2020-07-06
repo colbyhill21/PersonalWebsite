@@ -9,7 +9,7 @@
         <div style="background-color: #1a6b3c; height: 5px; margin: 1% 0;" [ngStyle]="{'width': onDesktop ? '250px' : '125px' }"></div>
     </div>
 
-    <div class="row" style="width: 100vw; margin: 0; padding: 1% 10%; display: flex; flex-flow: row wrap;" *ngIf="onDesktop">
+    <div class="row" style="width: 100%; margin: 0; padding: 1% 10%; display: flex; flex-flow: row wrap;" *ngIf="onDesktop">
         <div class="proj-col card">
             <div class="flip">
                 <div class="front" style="background-image: url(../../../../assets/hoh.jpg)">
@@ -30,6 +30,7 @@
                 <div class="back" style="text-align: center; padding: 0.5%;">
                     <h1 class="proj-title">USC Tour AR</h1>
                     <h5 class="proj-desc">iOS app that enables Augmented Reality historical tours of the University of South Carolina</h5>
+                    <a href="https://github.com/SCCapstone/UofSCTourAR" class="card-button">View</a>
                 </div>
             </div>
         </div>
@@ -48,7 +49,7 @@
     </div>
 
 <!-- Due to the complexity of the flip card I am having to make a separate card for mobile -->
-    <div class="row" style="width: 100vw; margin: 0; padding: 0 10%;" *ngIf="!onDesktop">
+    <div class="row" style="width: 100%; margin: 0; padding: 0 10%;" *ngIf="!onDesktop">
         <div class="row mobile">
             <div class="mobile-front" style="background-image: url(../../../../assets/hoh.jpg)">
                 <h1 class="mobile-heading" style="font-size: 6vw; padding: 1em 0.5em;"> Outdoorist </h1>
@@ -58,7 +59,7 @@
                     </h5>
                     <a href="https://apps.apple.com/app/id1489423707" class="card-button">View</a>
                 </div>
-            </div>     
+            </div>
         </div>
         <div class="row mobile">
             <div class="mobile-front" style="background-image: url(../../../../assets/tourAR.jpg)">
@@ -68,6 +69,7 @@
                     <h5 class="proj-desc" [ngStyle]="{'font-size': onDesktop ? '3vw' : '1.25em' }">
                         iOS app that enables Augmented Reality historical tours of the University of South Carolina
                     </h5>
+                    <a href="https://github.com/SCCapstone/UofSCTourAR" class="card-button">View</a>
                 </div>
             </div>
         </div>
@@ -79,7 +81,7 @@
                     <h5 class="proj-desc" [ngStyle]="{'font-size': onDesktop ? '3vw' : '1.25em' }">
                         Simple arcade game I created while learning the Java Objectdraw libary
                     </h5>
-                    <a href="https://github.com/colbyhill21/Block-Destroyer-Game" class="card-button">Code</a>
+                    <a href="https://github.com/colbyhill21/Block-Destroyer-Game" class="card-button">View</a>
                 </div>
             </div>
         </div>
