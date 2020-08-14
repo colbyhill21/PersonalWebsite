@@ -1,17 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { stringify } from 'querystring';
-
-type ExperienceCardInfo = {
-    companyName: string;
-    titles: string;
-    dates: string;
-    bulletss: string[];
-}
 
 @Component({
     selector: 'app-experience-section',
     templateUrl: './experience-section.component.html',
-    styleUrls: ['./experience-section.component.css']
+    // styleUrls: ['./experience-section.component.css']
 })
 export class ExperienceSectionComponent implements OnInit {
     onDesktop = true;
@@ -43,15 +35,14 @@ export class ExperienceSectionComponent implements OnInit {
     populateCards() {
         // tslint:disable-next-line: prefer-for-of
         for (let i = 0; i < this.companyNames.length; i++) {
-            // let x = ExperienceCardInfo('','','',['']);
-            let yur: string[] = this.bullets[i];
-            let x = {
+            const positionBullets: string[] = this.bullets[i];
+            const expItem = {
                 companyName: this.companyNames[i],
                 titles: this.titles[i],
                 dates: this.dates[i],
-                bullets: yur
+                bullets: positionBullets
             };
-            this.expList.push(x);
+            this.expList.push(expItem);
         }
     }
     ngOnInit() {

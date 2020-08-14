@@ -1,13 +1,41 @@
-<div id="header-div" style="background-color: #1b1b1b;" [ngStyle]="{'background-image': onDesktop ? 'url(../../../../assets/background.gif)' : 'url(../../../../assets/forest-dark.jpg)'}">
-    <h1 id="header-main-block" [ngStyle]="{'font-size': onDesktop ? '10vmin' : '17vmin' }"> <b>Colby Hill</b></h1>
+<div id="header-div" style="background-color: #1b1b1b; background-image: url(../../../../assets/northern-2.jpg);">
+    <h1 id="header-main-block" [ngStyle]="{'font-size': onDesktop ? '10vmin' : '15vmin' }"> <b>Colby Hill</b></h1>
     <h2 id="header-subtitle-block" [ngStyle]="{'font-size': onDesktop ? '4.2vmin' : '7vmin' }"> Software Engineer</h2>
-    <div class="header-icons">
-        <a aria-label="Send email" href="mailto:colbyahill21@gmail.com"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/colby-h/"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="https://github.com/colbyhill21"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        <a aria-label="My StackOverflow" target="_blank" href="https://stackoverflow.com/users/7553610/colby-hill"><i class="icon fab fa-stack-overflow" aria-hidden="true"></i></a>
+    <div style="height: 82px; display: flex; flex-flow: row wrap; justify-content: center; padding: 0 10%;">
+      <a href="https://github.com/colbyhill21">
+        <span class="icon-circle">
+          <svg style="margin: 12px 0 0 12px" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="40px" height="40px">
+            <path fill="white" d="M 33 29 C 31.203125 29 30 30.515625 30 33 C 30 35.484375 30.890625 38.046875 33 38 C 35.21875 37.949219 36.019531 35.777344 36 33 C 35.984375 30.515625 34.792969 29 33 29 Z M 44.261719 17.066406 C 44.535156 15.722656 44.652344 10.964844 42.679688 6 C 42.679688 6 38.148438 6.496094 31.296875 11.199219 C 29.863281 10.800781 27.429688 10.601563 25 10.601563 C 22.570313 10.601563 20.140625 10.800781 18.699219 11.195313 C 11.851563 6.496094 7.324219 6 7.324219 6 C 5.347656 10.964844 5.445313 15.609375 5.738281 17.066406 C 3.417969 19.585938 2 22.609375 2 26.742188 C 2 44.707031 16.90625 44.996094 20.667969 44.996094 C 21.519531 44.996094 23.210938 44.996094 25 45 C 26.789063 44.996094 28.484375 44.996094 29.332031 44.996094 C 33.09375 44.996094 48 44.707031 48 26.742188 C 48 22.609375 46.582031 19.585938 44.261719 17.066406 Z M 25.140625 43 L 25 43 C 15.570313 43 8.15625 41.660156 8.15625 32.496094 C 8.15625 30.300781 8.933594 28.265625 10.773438 26.574219 C 13.84375 23.753906 19.035156 25.246094 24.929688 25.246094 C 24.953125 25.246094 25.050781 25.246094 25.070313 25.246094 C 30.964844 25.246094 36.160156 23.757813 39.230469 26.574219 C 41.070313 28.265625 41.84375 30.300781 41.84375 32.496094 C 41.84375 41.660156 34.570313 43 25.140625 43 Z M 17 29 C 15.207031 29 14 31.015625 14 33.5 C 14 35.984375 15.207031 38 17 38 C 18.796875 38 20 35.984375 20 33.5 C 20 31.015625 18.796875 29 17 29 Z"/>
+          </svg>
+        </span>
+      </a>
+      <a href="https://www.linkedin.com/in/colby-h/">
+        <span class="icon-circle">
+          <svg style="margin: 12px 0 0 12px" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="40px" height="40px">
+            <path fill="white" d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/>
+          </svg>
+        </span>
+      </a>
+      <a href="https://medium.com/@colbyhill21">
+        <span class="icon-circle">
+          <svg style="margin: 12px 0 0 12px" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="40px" height="40px">
+            <path fill="white" d="M 3 6 L 7 11.091797 L 7 35.285156 L 1 43 L 15 43 L 9 35.285156 L 9 13.75 L 22 43 L 21.998047 43.013672 L 34 13.544922 L 34 39 L 30 43 L 47 43 L 43 39 L 42.972656 10.503906 L 46.863281 6.0136719 L 34.845703 6.0136719 L 25.605469 28.744141 L 15.496094 6 L 3 6 z"/>
+          </svg>
+        </span>
+      </a>
+      <a href="https://stackoverflow.com/users/7553610/colby-hill">
+        <span class="icon-circle">
+          <svg style="margin: 12px 0 0 12px" fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="40px" height="40px">
+            <path fill="white" d="M 9.914063 0.71875 L 9.085938 1.28125 L 11.894531 5.367188 L 12.71875 4.800781 Z M 7.695313 2.453125 L 7.039063 3.207031 L 10.917969 6.582031 L 11.574219 5.828125 Z M 6.226563 4.804688 L 5.773438 5.695313 L 10.210938 7.953125 L 10.664063 7.0625 Z M 5.363281 7.140625 L 5.136719 8.109375 L 9.976563 9.242188 L 10.203125 8.265625 Z M 3 9 L 3 14 L 12 14 L 12 9 L 11 9 L 11 13 L 4 13 L 4 9 Z M 5.03125 9.25 L 4.96875 10.25 L 9.972656 10.566406 L 10.035156 9.570313 Z M 5 11 L 5 12 L 10 12 L 10 11 Z"/>
+          </svg>
+        </span>
+      </a>
     </div>
-    <a class="down" href="#about" data-scroll=""><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+    <a class="down" href="#about" data-scroll="">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="40px" height="40px" id="chevron-down">
+        <path fill="white" d="M225.813 48.907L128 146.72 30.187 48.907 0 79.093l128 128 128-128z"/>
+      </svg>
+    </a>
 </div>
 <div style="height: 50px; padding: 0; margin: 0" id="about"></div>
 <div class="row" style="background-color: #1B1B1B; color: white; margin: 0; padding: 0 0 3% 5%; display: flex; flex-flow: row wrap;">
