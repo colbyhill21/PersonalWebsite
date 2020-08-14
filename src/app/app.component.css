@@ -1,49 +1,58 @@
 .icon {
-    font-size: 7vmin;
-    color: #fff !important;
+  font-size: 7vmin;
+  color: #fff !important;
 }
+
 .mover:hover {
-    color: #2c608e;
+  color: #2c608e;
 }
+
 .bkg {
-    background-color: #005A26;
+  background-color: #005A26;
 }
-.footer-row {
-    width: 100%;
-    height: 10vmin;
+
+.footer {
+  background-color: #005A26;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
 }
-.footer-col {
-    text-align: center;
-    padding: 1vmin 0.5vmin;
-    margin-bottom: 0.5%;
-    height: 100%;
-    display: inline-block;
-}
+
 .nb {
-    color: white;
-    font-family: 'Montserrat';
+  color: white;
+  font-family: 'Montserrat';
 }
+
 .active-link-css {
-   text-decoration: underline;
+  text-decoration: underline;
 }
+
 .menu-bar {
   width: 35px;
   height: 5px;
   background-color: white;
   margin: 6px 0;
 }
+
 .nav-link:hover {
-    background-color: #298b52;
+  background-color: #298b52;
 }
-.nav-link:active, .nav-link:after, .nav-link:active:after, .nav-link:not(:hover) {
-    background-color: #005A26;
+
+.nav-link:active,
+.nav-link:after,
+.nav-link:active:after,
+.nav-link:not(:hover) {
+  background-color: #005A26;
 }
+
 .logo-icon {
-    height: 50px;
-    padding: 5px;
-    margin: 0;
+  height: 50px;
+  padding: 5px;
+  margin: 0;
 }
+
 .navbar-brand {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }

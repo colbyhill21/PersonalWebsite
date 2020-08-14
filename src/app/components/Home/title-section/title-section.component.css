@@ -1,11 +1,9 @@
 #header-div {
-  /*  */
   background-color: #000107;
   width: 100%;
   height: calc(100vh - 50px);
   padding: 0;
   margin: 0;
-  /* background-color: #343e1c; */
   background-size: cover;
   background-position: bottom;
 }
@@ -25,7 +23,7 @@
   text-align: center;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
-  padding-bottom: 2vh;
+  padding-bottom: 10px;
 }
 
 .image-cropper {
@@ -97,7 +95,7 @@
   }
 }
 
-.fa-chevron-down {
+#chevron-down {
   color: #fff;
   text-align: center;
   cursor: pointer;
