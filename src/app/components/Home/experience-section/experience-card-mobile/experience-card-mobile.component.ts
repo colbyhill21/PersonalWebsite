@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'app-experience-card',
-    templateUrl: './experience-card.component.html'
+    selector: 'app-experience-card-mobile',
+    templateUrl: './experience-card-mobile.component.html'
 })
-export class ExperienceCardComponent {
+export class ExperienceCardMobileComponent {
     @Input() compName: string;
     @Input() title: string;
     @Input() dates: string;
