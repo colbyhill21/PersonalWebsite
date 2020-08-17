@@ -9,13 +9,13 @@ export class ExperienceSectionComponent implements OnInit {
     onDesktop = true;
     innerWidth: any;
     expList = [];
-    companyNames = ['Capital One', 'Krumware', 'Boeing', 'University Of South Carolina']
+    companyNames = ['Capital One', 'Krumware', 'Boeing', 'UofSC']
     titles = ['Software Engineering Intern', 'Software Development Intern', 'Software Engineering Intern', 'Assistant Researcher']
-    dates = ['June 2020 - Current', 'August 2019 - May 2020', 'May 2019 - August 2019', 'November 2017 - May 2019']
+    dates = ['June 2020 - August 2020', 'August 2019 - May 2020', 'May 2019 - August 2019', 'November 2017 - May 2019']
     bullets: string[][] = [
-        ['Architecting a full stack application to easily manage the features used in the Commercial Card Platform, saving managers hours of time each week',
-        'Collaborating with an Agile team remotely to develop, test, and implement solutions across the full stack',
-        'Developing a 3-layer architecture application consisting of frontend, backend, and APIs simultaneously'],
+        ['Architected a full-stack application which enabled product owners to effortlessly manage Commercial Card Platform features, saving hours of time each week',
+        'Implemented RESTful system architecture for a three-tier application to improve scalability',
+        'Utilized Cypress to create automated end-to-end tests which lessened the need for manual user testing'],
 
         ['Led the migration to Rancher, enabling Multi-Cloud Computing and improving application availability by 10%',
         'Automated Kubernetes resource management which eliminated the need for manual processing',
@@ -36,11 +36,14 @@ export class ExperienceSectionComponent implements OnInit {
         // tslint:disable-next-line: prefer-for-of
         for (let i = 0; i < this.companyNames.length; i++) {
             const positionBullets: string[] = this.bullets[i];
+            const iconNum: number = i
+            console.log(iconNum)
             const expItem = {
                 companyName: this.companyNames[i],
                 titles: this.titles[i],
                 dates: this.dates[i],
-                bullets: positionBullets
+                bullets: positionBullets,
+                icon: iconNum
             };
             this.expList.push(expItem);
         }

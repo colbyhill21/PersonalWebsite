@@ -8,6 +8,7 @@ import { AboutComponent } from './components/About/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { TitleSectionComponent } from './components/Home/title-section/title-section.component';
+import { IntroSectionComponent } from './components/Home/intro-section/intro-section.component';
 import { ExperienceSectionComponent } from './components/Home/experience-section/experience-section.component';
 import { ExperienceCardComponent } from './components/Home/experience-section/experience-card/experience-card.component';
 // tslint:disable-next-line: max-line-length
@@ -21,6 +22,7 @@ import { ProjectSectionComponent } from './components/Home/project-section/proje
     HomeComponent,
     AboutComponent,
     TitleSectionComponent,
+    IntroSectionComponent,
     ExperienceSectionComponent,
     ExperienceCardMobileComponent,
     ExperienceCardComponent,

@@ -9,4 +9,5 @@ export class ExperienceCardComponent {
     @Input() title: string;
     @Input() dates: string;
     @Input() bullets: string[];
+    @Input() iconNum: number;
 }

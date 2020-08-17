@@ -1,46 +1,44 @@
-<div style="background-image: url(../../../../assets/iceland.jpg); background-size: cover; background-color: #1B1B1B; opacity: 100%; padding-bottom: 3%; font-family: Montserrat;">
-    <div class="row exp" style="text-align: center; margin: 0 auto;" id="experience-section"
-    [ngStyle]="{'padding': onDesktop ? '2% 10px 2% 5%' : '10% 10px 2% 10px'}">
-        <h1 style="text-align: left; width: 100%; color: #ffffff; letter-spacing: 3px;"
-        [ngStyle]="{'font-size': onDesktop ? '3.5vw' : '8vw'}">
-            Experience
-        </h1>
-        <div style="background-color: #1a6b3c; height: 5px; margin: 1% 0;" [ngStyle]="{'width': onDesktop ? '250px' : '125px' }"></div>
+<!-- background-image: url(../../../../assets/iceland.jpg); background-size: cover;  -->
+<div style="background-color: #222; opacity: 100%; padding-bottom: 3%; font-family: Montserrat;">
+
+  <div style="height: 50px; padding: 0; margin: 0;" id="experience-section"></div>
+  <div style="padding: 0 5%; justify-content: center; margin-bottom: 50px;">
+    <div style="color: white; font-family: Montserrat; font-size: 70px; font-weight: 500; text-align: center;">Experience</div>
+    <div style="background-color: #1a6b3c; height: 5px; width: 150px; margin: 0 auto;"></div>
+  </div>
+
+  <div *ngIf="onDesktop">
+    <div style="display: flex; flex-flow: row wrap; justify-content: center; padding: 0 0%;">
+      <app-experience-card compName={{expList[0].companyName}} title={{expList[0].titles}} dates={{expList[0].dates}}
+        [bullets]="bullets[0]" iconNum=3>
+      </app-experience-card>
+      <app-experience-card compName={{expList[1].companyName}} title={{expList[1].titles}} dates={{expList[1].dates}}
+        [bullets]="bullets[1]" iconNum=2>
+      </app-experience-card>
     </div>
-
-
-    <div *ngIf="onDesktop">
-      <div style="display: flex; flex-flow: row wrap; justify-content: center; padding: 0 0%;">
-        <app-experience-card compName={{expList[0].companyName}} title={{expList[0].titles}} dates={{expList[0].dates}}
-            [bullets]="bullets[0]">
-        </app-experience-card>
-        <app-experience-card compName={{expList[1].companyName}} title={{expList[1].titles}} dates={{expList[1].dates}}
-            [bullets]="bullets[1]">
-        </app-experience-card>
-      </div>
-      <div style="display: flex; flex-flow: row wrap; justify-content: center; padding: 0 0%;">
-        <app-experience-card compName={{expList[2].companyName}} title={{expList[2].titles}} dates={{expList[2].dates}}
-            [bullets]="bullets[2]">
-        </app-experience-card>
-        <app-experience-card compName={{expList[3].companyName}} title={{expList[3].titles}} dates={{expList[3].dates}}
-            [bullets]="bullets[3]">
-        </app-experience-card>
-      </div>
+    <div style="display: flex; flex-flow: row wrap; justify-content: center; padding: 0 0%;">
+      <app-experience-card compName={{expList[2].companyName}} title={{expList[2].titles}} dates={{expList[2].dates}}
+        [bullets]="bullets[2]" iconNum=1>
+      </app-experience-card>
+      <app-experience-card compName={{expList[3].companyName}} title={{expList[3].titles}} dates={{expList[3].dates}}
+        [bullets]="bullets[3]" iconNum=0>
+      </app-experience-card>
     </div>
+  </div>
 
-    <div *ngIf="!onDesktop" style="display: flex; flex-flow: row wrap; justify-content: center; padding: 0 10%;">
-      <app-experience-card-mobile compName={{expList[0].companyName}} title={{expList[0].titles}} dates={{expList[0].dates}}
-          [bullets]="bullets[0]">
-      </app-experience-card-mobile>
-      <app-experience-card-mobile compName={{expList[1].companyName}} title={{expList[1].titles}} dates={{expList[1].dates}}
-          [bullets]="bullets[1]">
-      </app-experience-card-mobile>
+  <div *ngIf="!onDesktop" style="display: flex; flex-flow: row wrap; justify-content: center; padding: 0 10%;">
+    <app-experience-card-mobile compName={{expList[0].companyName}} title={{expList[0].titles}}
+      dates={{expList[0].dates}} [bullets]="bullets[0]">
+    </app-experience-card-mobile>
+    <app-experience-card-mobile compName={{expList[1].companyName}} title={{expList[1].titles}}
+      dates={{expList[1].dates}} [bullets]="bullets[1]">
+    </app-experience-card-mobile>
 
-      <app-experience-card-mobile compName={{expList[2].companyName}} title={{expList[2].titles}} dates={{expList[2].dates}}
-          [bullets]="bullets[2]">
-      </app-experience-card-mobile>
-      <app-experience-card-mobile compName={{expList[3].companyName}} title={{expList[3].titles}} dates={{expList[3].dates}}
-          [bullets]="bullets[3]">
-      </app-experience-card-mobile>
+    <app-experience-card-mobile compName={{expList[2].companyName}} title={{expList[2].titles}}
+      dates={{expList[2].dates}} [bullets]="bullets[2]">
+    </app-experience-card-mobile>
+    <app-experience-card-mobile compName={{expList[3].companyName}} title={{expList[3].titles}}
+      dates={{expList[3].dates}} [bullets]="bullets[3]">
+    </app-experience-card-mobile>
   </div>
 </div>

@@ -3,7 +3,7 @@
 	<div class="container" style="float: left; padding: 0 1%; margin: 0; width: 100%;">
 		<a class="navbar-logo" style="font-family: Montserrat; color: white;"> <img src="../assets/logo.png" class="logo-icon"> </a>
 		<ul class="nav navbar-nav nb" style="float: right; font-family: Montserrat;" >
-			<li class="nav-item"><a class="nav-link nb" routerLink="/" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+			<li class="nav-item"><a class="nav-link nb" href="#top-of-page" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
 			<li class="nav-item"><a class="nav-link nb" href="#experience-section" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Experience</a></li>
 			<li class="nav-item"><a class="nav-link nb" href="#project-section" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Projects</a></li>
 			<!-- <li class="nav-item"><a class="nav-link nb" href="#skills-section" routerLinkActive="active-link-css" [routerLinkActiveOptions]="{exact: true}">Skills</a></li> -->
@@ -23,7 +23,7 @@
 	</button>
 	<div class="container" style="padding: 3% 1%; margin: 0;" *ngIf="showMobileNav">
 		<ul class="nav navbar-nav nb" style="float: left" routerLinkActive="active">
-			<li class="nav-item"> <a class="nav-link nb" href="#header-div" data-scroll="" (click)="hideMobileNav()">Home</a></li>
+			<li class="nav-item"> <a class="nav-link nb" href="#top-of-page" data-scroll="" (click)="hideMobileNav()">Home</a></li>
 			<li class="nav-item"> <a class="nav-link nb" href="#experience-section" data-scroll="" (click)="hideMobileNav()">Experience</a></li>
 			<li class="nav-item"> <a class="nav-link nb" href="#project-section" data-scroll="" (click)="hideMobileNav()">Projects</a></li>
       <li class="nav-item"> <a class="nav-link nb" href="about/#more-about-me" data-scroll="" (click)="hideMobileNav()">About Me</a></li>
