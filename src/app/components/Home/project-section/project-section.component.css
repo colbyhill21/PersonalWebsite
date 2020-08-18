@@ -2,14 +2,13 @@
   height: 200px;
   width: 320px;
   padding: 0;
-  margin: 2% auto;
   border-radius: 20px;
   background-size: cover;
   background-position: center;
   padding: 0;
 }
 .card-holder {
-  margin: 0 50px;
+  margin: 30px;
   height: 200px;
   width: 320px;
 }
@@ -17,13 +16,15 @@ a {
   text-decoration: none;
 }
 .project-title {
-  height: 160px;
+  height: 40px;
+  width: 320px;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 30px;
   text-align: center;
   padding: 5px;
   margin: 0;
+  color: white;
 }
 .project-desc {
   height: 40px;

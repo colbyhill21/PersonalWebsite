@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/Home/home.component';
-import { AboutComponent } from './components/About/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { TitleSectionComponent } from './components/Home/title-section/title-section.component';
@@ -20,7 +19,6 @@ import { ProjectSectionComponent } from './components/Home/project-section/proje
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
     TitleSectionComponent,
     IntroSectionComponent,
     ExperienceSectionComponent,
