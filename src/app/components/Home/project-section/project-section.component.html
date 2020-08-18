@@ -1,86 +1,27 @@
 <div style="background-color: #1B1B1B; padding-bottom: 3%;" id="project-section">
-
-  <div style="padding: 0 5%; justify-content: center; align-items: center;">
-    <div style="color: white; font-family: Montserrat; font-size: 70px; font-weight: 500; text-align: center;">Projects</div>
-    <div style="background-color: #1a6b3c; height: 5px; width: 150px; margin: 0 auto;"></div>
-  </div>
-
-
-    <div class="row" style="width: 100%; margin: 0; padding: 1% 10%; display: flex; flex-flow: row wrap;" *ngIf="onDesktop">
-        <div class="proj-col card">
-            <div class="flip">
-                <div class="front" style="background-image: url(../../../../assets/hoh.jpg)">
-                   <h1 class="text-shadow" style="font-size: 2vw;">Outdoorist</h1>
-                </div>
-                <div class="back" style="text-align: center; padding: 0.5%;">
-                    <h1 class="proj-title">Outdoorist</h1>
-                    <h5 class="proj-desc">iOS app to track outdoor adventures, learn about new destinations, and plan trips</h5>
-                    <a href="https://apps.apple.com/app/id1489423707" class="card-button">View</a>
-                </div>
-            </div>
-        </div>
-        <div class="proj-col card">
-            <div class="flip">
-                <div class="front" style="background-image: url(../../../../assets/tourAR.jpg); background-position: top !important;">
-                   <h1 class="text-shadow"  style="font-size: 2vw;">USC Tour AR</h1>
-                </div>
-                <div class="back" style="text-align: center; padding: 0.5%;">
-                    <h1 class="proj-title">USC Tour AR</h1>
-                    <h5 class="proj-desc">iOS app that enables Augmented Reality historical tours of the University of South Carolina</h5>
-                    <a href="https://github.com/SCCapstone/UofSCTourAR" class="card-button">View</a>
-                </div>
-            </div>
-        </div>
-        <div class="proj-col card">
-            <div class="flip">
-                <div class="front" style="background-image: url(../../../../assets/blockDestroyer.jpg); background-position: top !important;">
-                   <h1 class="text-shadow" style="font-size: 2vw;">Block<br>Destroyer</h1>
-                </div>
-                <div class="back" style="text-align: center; padding: 0.5%;">
-                    <h1 class="proj-title">Block Destroyer</h1>
-                    <h5 class="proj-desc">Simple arcade game I created while learning the Java Objectdraw libary</h5>
-                    <a href="https://github.com/colbyhill21/Block-Destroyer-Game" class="card-button">View</a>
-                </div>
-            </div>
-        </div>
+    <div style="padding: 0 5%; justify-content: center; align-items: center;">
+        <div class="headerFont">Projects</div>
+        <div class="headerUnderscore"></div>
     </div>
 
-<!-- Due to the complexity of the flip card I am having to make a separate card for mobile -->
-    <div class="row" style="width: 100%; margin: 0; padding: 0 10%;" *ngIf="!onDesktop">
-        <div class="row mobile">
-            <div class="mobile-front" style="background-image: url(../../../../assets/hoh.jpg)">
-                <h1 class="mobile-heading" style="font-size: 6vw; padding: 1em 0.5em;"> Outdoorist </h1>
-                <div style="margin: 10% 0 0 0; vertical-align: bottom; padding: 2%; text-align: center; background: rgba(13, 18, 24, 0.75);">
-                    <h5 class="proj-desc" [ngStyle]="{'font-size': onDesktop ? '3vw' : '1.25em' }">
-                        iOS app to track outdoor adventures, learn about new destinations, and plan trips
-                    </h5>
-                    <a href="https://apps.apple.com/app/id1489423707" class="card-button">View</a>
+    <div style="width: 100%; margin: 0; padding: 0; justify-content: center; display: flex; flex-flow: row wrap;">
+        <a href="http://www.ADDLINK" class="card-holder">
+            <div class="card" style="background-image: url(../../../../assets/outdoorist.jpg);">
+                <h1 class="project-title" style="color: black;">Outdoorist</h1>
+                <div class="project-desc">
+                    iOS app to track outdoor adventures, learn about new destinations, and plan trips
                 </div>
             </div>
-        </div>
-        <div class="row mobile">
-            <div class="mobile-front" style="background-image: url(../../../../assets/tourAR.jpg)">
-                <h1 class="mobile-heading" style="font-size: 6vw; padding: 1em 0.5em;"> USC Tour AR </h1>
-                <div
-                    style="margin: 10% 0 0 0; vertical-align: bottom; padding: 2%; text-align: center; background: rgba(13, 18, 24, 0.75);">
-                    <h5 class="proj-desc" [ngStyle]="{'font-size': onDesktop ? '3vw' : '1.25em' }">
-                        iOS app that enables Augmented Reality historical tours of the University of South Carolina
-                    </h5>
-                    <a href="https://github.com/SCCapstone/UofSCTourAR" class="card-button">View</a>
+        </a>
+
+        <a href="http://www.ADDLINK" class="card-holder">
+            <div class="card"
+                style="background-image: url(../../../../assets/hoh.jpg);">
+                <h1 class="project-title" style="color: black;"> Outdoorist</h1>
+                <div class="project-desc">
+                    iOS app to track outdoor adventures, learn about new destinations, and plan trips
                 </div>
             </div>
-        </div>
-        <div class="row mobile">
-            <div class="mobile-front" style="background-image: url(../../../../assets/blockDestroyer.jpg)">
-                <h1 class="mobile-heading" style="font-size: 6vw; padding: 1em 0.5em;"> Block<br>Destroyer</h1>
-                <div
-                    style="margin: 10% 0 0 0; vertical-align: bottom; padding: 2%; text-align: center; background: rgba(13, 18, 24, 0.75);">
-                    <h5 class="proj-desc" [ngStyle]="{'font-size': onDesktop ? '3vw' : '1.25em' }">
-                        Simple arcade game I created while learning the Java Objectdraw libary
-                    </h5>
-                    <a href="https://github.com/colbyhill21/Block-Destroyer-Game" class="card-button">View</a>
-                </div>
-            </div>
-        </div>
+        </a>
     </div>
 </div>

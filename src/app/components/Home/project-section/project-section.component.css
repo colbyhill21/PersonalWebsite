@@ -1,145 +1,37 @@
-* {
-  box-sizing: border-box;
-  font-weight: normal;
-}
-body {
-  color: #555;
-  background: #1b1b1b;
-  text-align: center;
-  font-family: 'Lato';
-  padding: 1em;
-}
-h1 {
-  font-size: 2.2em;
-}
-.flip > .front, .flip > .back {
-  display: block;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition-duration: 0.5s;
-  transition-property: transform, opacity;
-}
-.flip > .front {
-  transform: rotateY(0deg);
-}
-.flip > .back {
-  position: absolute;
-  opacity: 0;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  transform: rotateY(-180deg);
-}
-.flip:hover > .front {
-  transform: rotateY(180deg);
-}
-.flip:hover > .back {
-  opacity: 1;
-  transform: rotateY(0deg);
-}
-.flip.flip-vertical > .back {
-  transform: rotateX(-180deg);
-}
-.flip.flip-vertical:hover > .front {
-  transform: rotateX(180deg);
-}
-.flip.flip-vertical:hover > .back {
-  transform: rotateX(0deg);
-}
-.flip {
-  position: relative;
-  display: inline-block;
-  margin-right: 2px;
-  width: 100%;
-}
-.flip > .front, .flip > .back {
-  display: block;
-  color: white;
-  width: inherit;
-  background-size: cover !important;
-  height: 220px;
-  padding: 1em 2em;
-  background: #313131;
-  border-radius: 10px;
-}
-.flip > .front p, .flip > .back p {
-  font-size: 0.9125rem;
-  line-height: 160%;
-  color: #999;
-}
-.text-shadow {
-  text-transform: uppercase;
-  font-weight: 600;
-  /* -webkit-text-stroke: 0.25px black; */
-}
-.card-list {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  font-size: 2rem;
-  color: darkslategrey;
-  padding: 0;
-  box-sizing: inherit;
-  list-style: none;
-  width: 80%;
-  margin: 0 auto;
-}
-.card-button {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  margin: 0;
-  padding: 1vmin 4vw;
-  background-color: #fff;
-  color: #777;
-  box-sizing: inherit;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all .2s;
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.21);
-}
-.proj-desc {
-  padding: 2% 1%;
-  font-family: "Lato", sans-serif;
-}
-.proj-title {
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
-}
 .card {
-  min-width: 100px;
+  height: 200px;
+  width: 320px;
+  padding: 0;
+  margin: 2% auto;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
 }
-
-.proj-col {
-    width: 29%;
-    margin: 2.15%;
-    padding: 0;
-    display: inline-block;
+.card-holder {
+  margin: 0 50px;
+  height: 200px;
+  width: 320px;
 }
-
-.mobile {
-  padding: 3% 0;
-  margin: 0;
+a {
+  text-decoration: none;
 }
-
-.mobile-front {
-  background: #313131;
-  position: relative;
-  display: block;
-  margin: 0;
-  margin-right: 2px;
-  width: 100%;
-  color: white;
-  background-size: cover !important;
-  border-radius: 10px;
-}
-.mobile-heading {
+.project-title {
+  height: 160px;
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+}
+.project-desc {
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  text-align: center;
+  background: rgba(13, 18, 24, 0.75);
+  color: white;
+  font-size: 14px;
 }
