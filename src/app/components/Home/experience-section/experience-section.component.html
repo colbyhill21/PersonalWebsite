@@ -12,15 +12,23 @@
       [bullets]="expList[0].bullets" iconNum=3>
     </app-experience-card>
     <app-experience-card compName={{expList[1].companyName}} title={{expList[1].titles}} dates={{expList[1].dates}}
-      [bullets]="expList[1].bullets" iconNum=2>
+      [bullets]="expList[1].bullets" iconNum=3>
     </app-experience-card>
   </div>
   <div *ngIf="onDesktop" style="display: flex; flex-flow: row wrap; justify-content: center; padding: 0 0%;">
     <app-experience-card compName={{expList[2].companyName}} title={{expList[2].titles}} dates={{expList[2].dates}}
-    [bullets]="expList[2].bullets" iconNum=1>
+    [bullets]="expList[2].bullets" iconNum=3>
     </app-experience-card>
     <app-experience-card compName={{expList[3].companyName}} title={{expList[3].titles}} dates={{expList[3].dates}}
-    [bullets]="expList[3].bullets" iconNum=0>
+    [bullets]="expList[3].bullets" iconNum=2>
+    </app-experience-card>
+  </div>
+  <div *ngIf="onDesktop" style="display: flex; flex-flow: row wrap; justify-content: center; padding: 0 0%;">
+    <app-experience-card compName={{expList[4].companyName}} title={{expList[4].titles}} dates={{expList[4].dates}}
+    [bullets]="expList[4].bullets" iconNum=1>
+    </app-experience-card>
+    <app-experience-card compName={{expList[5].companyName}} title={{expList[5].titles}} dates={{expList[5].dates}}
+    [bullets]="expList[5].bullets" iconNum=0>
     </app-experience-card>
   </div>
 
@@ -37,6 +45,13 @@
     </app-experience-card-mobile>
     <app-experience-card-mobile compName={{expList[3].companyName}} title={{expList[3].titles}}
       dates={{expList[3].dates}} [bullets]="expList[3].bullets">
+    </app-experience-card-mobile>
+
+    <app-experience-card-mobile compName={{expList[4].companyName}} title={{expList[4].titles}}
+      dates={{expList[4].dates}} [bullets]="expList[4].bullets">
+    </app-experience-card-mobile>
+    <app-experience-card-mobile compName={{expList[5].companyName}} title={{expList[5].titles}}
+      dates={{expList[5].dates}} [bullets]="expList[5].bullets">
     </app-experience-card-mobile>
   </div>
 

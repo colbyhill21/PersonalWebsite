@@ -1,12 +1,12 @@
 [
     {
         "companyName": "Capital One",
-        "position": "Senior Associate Software Engineer",
+        "position": "Sr. Assoc. Software Engineer",
         "dates": "December 2022 - Current",
         "responsibilities": [
-            "Development",
-            "Cool stuff",
-            "Extra cool dev stuff"
+            "Supporting and enhancing the Document Request and Document Upload APIs, facilitating seamless processing of over a million customer document uploads per month",
+            "Led the modernization of event streaming, resulting in improved real-time monitoring and analytics.",
+            "Architected a modernized API to efficiently handle customer document uploads, resulting in a streamlined document processing flow."
         ]
     },
     {
@@ -14,9 +14,9 @@
         "position": "Associate Software Engineer",
         "dates": "August 2021 - December 2022",
         "responsibilities": [
-            "Development",
-            "Cool stuff",
-            "Extra cool dev stuff"
+            "Spearheaded the development of four new reward auto-redemption thresholds, reducing reward redemption friction for Capital One's highest value customers",
+            "Developed an API to aggregate customer transactions and determine eligibility for an annual spend bonus, adding a new capability to promote customer spending.",
+            "Resolved a bug which had affected small business customers for over 3 years, improving customer experience."
         ]
     },
     {
