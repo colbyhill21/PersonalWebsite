@@ -1,8 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import * as experience from './experience.json';
+import experience from './experience.json';
 @Component({
     selector: 'app-experience-section',
     templateUrl: './experience-section.component.html',
+    standalone: false
 })
 export class ExperienceSectionComponent implements OnInit {
     onDesktop = true;
