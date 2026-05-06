@@ -2,7 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-experience-card',
-    templateUrl: './experience-card.component.html'
+    templateUrl: './experience-card.component.html',
+    standalone: false
 })
 export class ExperienceCardComponent {
     @Input() compName: string;

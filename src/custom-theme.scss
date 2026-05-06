@@ -1,6 +1,7 @@
 @use '@angular/material' as mat;
 
-@include mat.core();
+@include mat.elevation-classes();
+@include mat.app-background();
 @include mat.strong-focus-indicators((
   border-style: dotted,
   border-width: 4px,

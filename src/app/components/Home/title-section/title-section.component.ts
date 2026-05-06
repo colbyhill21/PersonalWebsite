@@ -3,7 +3,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
 @Component({
     selector: 'app-title-section',
     templateUrl: './title-section.component.html',
-    styleUrls: ['./title-section.component.css']
+    styleUrls: ['./title-section.component.css'],
+    standalone: false
 })
 export class TitleSectionComponent implements OnInit {
     onDesktop = true;

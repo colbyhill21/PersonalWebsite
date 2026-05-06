@@ -1,9 +1,10 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-project-section',
-  templateUrl: './project-section.component.html',
-  styleUrls: ['./project-section.component.css']
+    selector: 'app-project-section',
+    templateUrl: './project-section.component.html',
+    styleUrls: ['./project-section.component.css'],
+    standalone: false
 })
 export class ProjectSectionComponent implements OnInit {
   onDesktop = true;

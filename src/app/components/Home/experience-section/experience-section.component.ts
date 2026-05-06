@@ -3,6 +3,7 @@ import * as experience from './experience.json';
 @Component({
     selector: 'app-experience-section',
     templateUrl: './experience-section.component.html',
+    standalone: false
 })
 export class ExperienceSectionComponent implements OnInit {
     onDesktop = true;
