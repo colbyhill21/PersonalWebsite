@@ -7,7 +7,7 @@ This is the repository for my website. Hosted at `https://www.colby-hill.com`
 
 ## Tools and Technologies
 
-I designed the website using Adobe XD and developed it using Angular, HTML5, and CSS3. I leveraged numerous AWS services including S3, Route 53, Cloudfront, ACM, CodeBuild, CodePipeline, and CloudTrail to handle the website's storage, hosting, content delivery, certificate management, and CI/CD.
+I designed the website using Adobe XD and developed it using Angular, HTML5, and CSS3. I leveraged numerous AWS services to handle the website's storage, hosting, content delivery, certificate management, and CI/CD.
 
 ## Continuous Integration and Deployment
 
@@ -17,6 +17,10 @@ This repository is currently configured to automatically run testing and deploy 
 
 First, run `npm install` in the project root directory to install all dependencies.
 Then run `ng serve -o` which will build and then launch a server that will automatically open your default browser
+
+## Prepping for a release
+
+To build the application to a local dist/ folder, use the command `ng build`
 
 ## How to add a component
 

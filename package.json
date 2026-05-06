@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "deploy": "npm run build -- --configuration production && aws s3 sync dist/ch-web/ s3://www.colby-hill.com --delete && aws cloudfront create-invalidation --distribution-id E3DTHM286GX9XY --paths \"/*\"",
     "test": "ng test",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadlessCustom",
     "lint": "ng lint",
