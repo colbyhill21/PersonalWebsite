@@ -3,6 +3,7 @@
         "companyName": "Capital One",
         "position": "Sr. Assoc. Software Engineer",
         "dates": "December 2022 - Current",
+        "logo": "capitalOne",
         "responsibilities": [
             "Supporting and enhancing the Document Request and Document Upload APIs, facilitating seamless processing of over a million customer document uploads per month",
             "Led the modernization of event streaming, resulting in improved real-time monitoring and analytics.",
@@ -13,6 +14,7 @@
         "companyName": "Capital One",
         "position": "Associate Software Engineer",
         "dates": "August 2021 - December 2022",
+        "logo": "capitalOne",
         "responsibilities": [
             "Spearheaded the development of four new reward auto-redemption thresholds, reducing reward redemption friction for Capital One's highest value customers",
             "Developed an API to aggregate customer transactions and determine eligibility for an annual spend bonus, adding a new capability to promote customer spending.",
@@ -23,6 +25,7 @@
         "companyName": "Capital One",
         "position": "Software Engineering Intern",
         "dates": "June 2020 - August 2020",
+        "logo": "capitalOne",
         "responsibilities": [
             "Architected a full-stack application which enabled product owners to effortlessly manage Commercial Card Platform features, saving hours of time each week",
             "Implemented RESTful system architecture for a three-tier application to improve scalability",
@@ -33,6 +36,7 @@
         "companyName": "Krumware",
         "position": "Software Developer",
         "dates": "August 2019 - May 2020",
+        "logo": "krumware",
         "responsibilities": [
             "Led the migration to Rancher, enabling Multi-Cloud Computing and improving application availability by 10%",
             "Automated Kubernetes resource management which eliminated the need for manual processing",
@@ -43,6 +47,7 @@
         "companyName": "Boeing",
         "position": "Software Engineering Intern",
         "dates": "May 2019 - August 2019",
+        "logo": "boeing",
         "responsibilities": [
             "Pioneered Boeing’s shift to the cloud by deploying an identity management application into production on Pivotal Cloud Foundry",
             "Leveraged CI/CD techniques to accelerate development speed, improve testability, and maximize efficiency",
@@ -53,6 +58,7 @@
         "companyName": "UofSC",
         "position": "Assistant Researcher",
         "dates": "November 2017 - May 2019",
+        "logo": "uofsc",
         "responsibilities": [
             "Developed an Android smartwatch application that detected smoking gestures with 99% classification accuracy",
             "Optimized accelerometer signal processing and gesture classification, extending smartwatch battery lifespan by 325% which increased viability for field survey testing",
