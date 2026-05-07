@@ -1,0 +1,38 @@
+.experience-section-wrapper {
+  background-color: #222;
+  padding-bottom: 48px;
+  font-family: Montserrat, sans-serif;
+}
+
+.section-anchor {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.section-header {
+  padding: 0 5%;
+  margin-bottom: 40px;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 28px;
+  padding: 0 5% 8px;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    padding: 0 6% 8px;
+    gap: 20px;
+  }
+
+  .section-header {
+    padding: 0 6%;
+  }
+}

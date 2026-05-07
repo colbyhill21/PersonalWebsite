@@ -1,48 +1,30 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import experience from './experience.json';
 @Component({
     selector: 'app-experience-section',
     templateUrl: './experience-section.component.html',
+    styleUrls: ['./experience-section.component.css'],
     standalone: false
 })
 export class ExperienceSectionComponent implements OnInit {
-    onDesktop = true;
-    innerWidth: any;
     experienceData: any = experience;
-    expList = [];
+    expList: { companyName: any; titles: any; dates: any; bullets: any; logo: any }[] = [];
 
-    constructor() {
-        this.populateCards();
-    }
+    constructor() {}
+
     populateCards() {
-        for(let i = 0; i < this.experienceData.length; i++) {
-            const iconNum: number = i;
-
-            const expItem = {
+        for (let i = 0; i < this.experienceData.length; i++) {
+            this.expList.push({
                 companyName: this.experienceData[i].companyName,
                 titles: this.experienceData[i].position,
                 dates: this.experienceData[i].dates,
                 bullets: this.experienceData[i].responsibilities,
-                icon: iconNum
-            };
-            this.expList.push(expItem);
+                logo: this.experienceData[i].logo
+            });
         }
-    }
-    ngOnInit() {
-        this.innerWidth = window.innerWidth;
-        this.adjustHeight();
-    }
-    @HostListener('window:resize', ['$event']) // dynamically update the width on resize.
-    onResize(event: { target: { innerWidth: any; }; }) {
-        this.innerWidth = event.target.innerWidth;
-        this.adjustHeight();
     }
 
-    adjustHeight() {
-        if (this.innerWidth < 768) {
-            this.onDesktop = false;
-        } else {
-            this.onDesktop = true;
-        }
+    ngOnInit() {
+        this.populateCards();
     }
 }
