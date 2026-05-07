@@ -1,8 +1,19 @@
 [
     {
+        "companyName": "Fidelity Investments",
+        "position": "Senior Software Engineer",
+        "dates": "October 2023 - Current",
+        "logo": "fidelity",
+        "responsibilities": [
+            "Developed a digital assistant integrating 10+ internal systems to deliver natural, context-aware customer conversations.",
+            "Architected a patent-pending short-term memory graph for conversation state tracking, optimizing token usage while enhancing conversation relevance.",
+            "Engineered an analytics platform that parses Snowflake conversation data and generates high-level insights for strategic decision-making and customer support improvements."
+        ]
+    },
+    {
         "companyName": "Capital One",
         "position": "Sr. Assoc. Software Engineer",
-        "dates": "December 2022 - Current",
+        "dates": "December 2022 - September 2023",
         "logo": "capitalOne",
         "responsibilities": [
             "Supporting and enhancing the Document Request and Document Upload APIs, facilitating seamless processing of over a million customer document uploads per month",

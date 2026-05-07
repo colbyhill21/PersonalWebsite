@@ -8,7 +8,7 @@ import experience from './experience.json';
 })
 export class ExperienceSectionComponent implements OnInit {
     experienceData: any = experience;
-    expList = [];
+    expList: { companyName: any; titles: any; dates: any; bullets: any; logo: any }[] = [];
 
     constructor() {
         this.populateCards();
