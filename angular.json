@@ -31,6 +31,7 @@
               "src/styles.css"
             ],
             "scripts": [],
+            "allowedCommonJsDependencies": ["hammerjs"],
             "browser": "src/main.ts"
           },
           "configurations": {
@@ -44,7 +45,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
