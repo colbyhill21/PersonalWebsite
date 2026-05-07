@@ -10,9 +10,7 @@ export class ExperienceSectionComponent implements OnInit {
     experienceData: any = experience;
     expList: { companyName: any; titles: any; dates: any; bullets: any; logo: any }[] = [];
 
-    constructor() {
-        this.populateCards();
-    }
+    constructor() {}
 
     populateCards() {
         for (let i = 0; i < this.experienceData.length; i++) {
@@ -26,5 +24,7 @@ export class ExperienceSectionComponent implements OnInit {
         }
     }
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.populateCards();
+    }
 }
